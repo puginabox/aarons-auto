@@ -20,7 +20,7 @@ gulp.task('styles', function() {
     log('Compiling Sass to CSS');
 
     return gulp
-        .src('./src/client/components/sass/*.scss')
+        .src(config.sass)
         .pipe(plug.plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -36,7 +36,7 @@ gulp.task('styles', function() {
         // Would like to catch the error here 
     })
 //    .pipe(plug.minifyCSS())
-    .pipe(gulp.dest('app/assets/temp'));
+    .pipe(gulp.dest(config.temp));
 });
 
 

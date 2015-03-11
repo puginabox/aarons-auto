@@ -1,11 +1,18 @@
 module.exports = function() {
-    var config = {
+    var client = './src/client/';
 
-        // all js to vet
+    var config = {
+        temp: './.tmp/',
+
+        /**
+         * Files paths
+         */
         alljs: [
             './src/**/*.js',
             './*.js'
-        ]
+        ],
+
+        sass: client + 'components/sass/*.scss'
     };
 
     return config;
