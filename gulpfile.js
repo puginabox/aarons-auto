@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var args = require('yargs').argv;
+var clean = require('del');
 var config = require('./gulp.config')();
 var plug = require('gulp-load-plugins')({lazy: true});
 
@@ -39,7 +40,10 @@ gulp.task('styles', function() {
     .pipe(gulp.dest(config.temp));
 });
 
-
+gulp.task('clean-styles', function(){
+    var files = config.temp + '**/*.css';
+    clean(files);
+});
 
 
 //-------- Messaging function -------------|
