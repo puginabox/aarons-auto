@@ -51,6 +51,17 @@ function clean(path, finito) {
     del(path, finito);
 }
 
+
+//----------------- Watch Functions --------|
+
+
+// Watching Sass
+gulp.task('watching-sass', function(){
+    gulp.watch([config.sass], ['styles']);
+});
+
+
+
 //-------- Messaging function -------------|
 function log(msg) {
     if (typeof(msg) === 'object') {

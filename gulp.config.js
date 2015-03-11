@@ -12,7 +12,7 @@ module.exports = function() {
             './*.js'
         ],
 
-        sass: client + 'components/sass/*.scss'
+        sass: client + 'components/sass/**/*.scss'
     };
 
     return config;
