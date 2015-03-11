@@ -17,18 +17,22 @@ gulp.task('vet', function() {
 
 
 gulp.task('styles', function() {
-    gulp.src('./src/client/components/sass/*.scss')
-    .pipe(plug.plumber({
-        errorHandler: function (error) {
-            console.log(error.message);
-            this.emit('end');
-        }}))
-    .pipe(plug.compass({
-        css: './src/client/styles',
-        sass: './src/client/components/sass',
-        image: './src/client/images'
-    }))
-    .on('error', function(err) {
+    log('Compiling Sass to CSS');
+
+    return gulp
+        .src('./src/client/components/sass/*.scss')
+        .pipe(plug.plumber({
+            errorHandler: function (error) {
+                console.log(error.message);
+                this.emit('end');
+            }}))
+        .pipe(plug.compass({
+            css: './src/client/styles',
+            sass: './src/client/components/sass',
+            image: './src/client/images'
+        }))
+        .pipe(plug.autoprefixer({browsers: ['last 2 version', '> 5%']}))
+        .on('error', function(err) {
         // Would like to catch the error here 
     })
 //    .pipe(plug.minifyCSS())
