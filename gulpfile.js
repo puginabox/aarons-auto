@@ -1,18 +1,18 @@
 var gulp = require('gulp');
 var args = require('yargs').argv;
 var config = require('./gulp.config')();
-var $ = require('gulp-load-plugins')({lazy: true});
+var plug = require('gulp-load-plugins')({lazy: true});
 
 gulp.task('vet', function() {
     log('Analyzing source with JSHint and JSCS');
 
     return gulp
         .src(config.alljs)
-        .pipe($.if(args.verbose, $.print()))
-        .pipe($.jscs())
-        .pipe($.jshint())
-        .pipe($.jshint.reporter('jshint-stylish', {verbose: true}))
-        .pipe($.jshint.reporter('fail'));
+        .pipe(plug.if(args.verbose, plug.print()))
+        .pipe(plug.jscs())
+        .pipe(plug.jshint())
+        .pipe(plug.jshint.reporter('jshint-stylish', {verbose: true}))
+        .pipe(plug.jshint.reporter('fail'));
 });
 
 //-------- Messaging function -------------|
@@ -21,10 +21,10 @@ function log(msg) {
     if (typeof(msg) === 'object') {
         for (var item in msg) {
             if (msg.hasOwnProperty(item)) {
-                $.util.log($.util.colors.blue(msg[item]));
+                plug.util.log(plug.util.colors.blue(msg[item]));
             }
         }
     } else {
-        $.util.log($.util.colors.blue(msg));
+        plug.util.log(plug.util.colors.blue(msg));
     }
 }
