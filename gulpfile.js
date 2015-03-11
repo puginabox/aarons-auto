@@ -17,7 +17,7 @@ gulp.task('vet', function() {
 });
 
 
-gulp.task('styles', function() {
+gulp.task('styles', ['clean-styles'],function() {
     log('Compiling Sass to CSS');
 
     return gulp
