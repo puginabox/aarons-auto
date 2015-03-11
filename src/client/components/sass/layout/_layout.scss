@@ -1,7 +1,23 @@
 /*----------------------- @Desktop -----------------------------*/
 
 @media all and (min-width: 901px) and (max-width: 1200px) {
+
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ for testing
     body {
-        background: orange;  
+        background: pink;
     }
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing
+
+    #burger-menu {
+        display: none;
+    }    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 } // end of @media

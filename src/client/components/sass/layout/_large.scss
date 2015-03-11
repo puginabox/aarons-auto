@@ -2,9 +2,11 @@
 
 @media all and (min-width: 1201px) {
     body {
-        background: pink;
+        background: red;
     
     }
-    
+    #burger-menu {
+        display: none;
+    }        
     
 } // end of @media

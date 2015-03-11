@@ -1,9 +1,20 @@
 /*----------------------- @Mobile -----------------------------*/
 
-@media all and (min-width: 0px) and (max-width: 401px) {
+@media all and (min-width: 0px) and (max-width: 600px) {
+    
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~ for testing
     body {
         background: green;
     }
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing
+
+    #burger-menu {
+        display: block;
+    }
+    #main-menu {
+        display: none;
+    }    
+    
     
     
 } // end of @media
