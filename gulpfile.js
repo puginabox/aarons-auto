@@ -40,15 +40,15 @@ gulp.task('styles', ['clean-styles'],function() {
     .pipe(gulp.dest(config.temp));
 });
 
-gulp.task('clean-styles', function(){
+gulp.task('clean-styles', function(finito){
     var files = config.temp + '**/*.css';
-    clean(files);
+    clean(files, finito);
 });
 
 //-------- Cleaning Function -------------|
-function clean(path) {
+function clean(path, finito) {
     log('Cleaning up ' + plug.util.colors.blue(path));
-    del(path);
+    del(path, finito);
 }
 
 //-------- Messaging function -------------|
