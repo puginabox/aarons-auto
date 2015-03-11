@@ -24,7 +24,7 @@ gulp.task('styles', ['clean-styles'],function() {
         .src(config.sass)
         .pipe(plug.plumber({
             errorHandler: function (error) {
-                console.log(error.message);
+                log(error.message);
                 this.emit('end');
             }}))
         .pipe(plug.compass({
@@ -53,7 +53,6 @@ function clean(path, finito) {
 
 
 //----------------- Watch Functions --------|
-
 
 // Watching Sass
 gulp.task('watching-sass', function(){
