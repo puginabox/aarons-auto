@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var args = require('yargs').argv;
-var clean = require('del');
+var del = require('del');
 var config = require('./gulp.config')();
 var plug = require('gulp-load-plugins')({lazy: true});
 
@@ -45,9 +45,13 @@ gulp.task('clean-styles', function(){
     clean(files);
 });
 
+//-------- Cleaning Function -------------|
+function clean(path) {
+    log('Cleaning up ' + plug.util.colors.blue(path));
+    del(path);
+}
 
 //-------- Messaging function -------------|
-
 function log(msg) {
     if (typeof(msg) === 'object') {
         for (var item in msg) {
