@@ -3,6 +3,7 @@ var args = require('yargs').argv;
 var del = require('del');
 var config = require('./gulp.config')();
 var plug = require('gulp-load-plugins')({lazy: true});
+var port = process.env.PORT || config.defaultPort;
 
 gulp.task('vet', function() {
     log('Analyzing source with JSHint and JSCS');
@@ -57,6 +58,24 @@ function clean(path, finito) {
 // Watching Sass
 gulp.task('watching-sass', function(){
     gulp.watch([config.sass], ['styles']);
+});
+
+//-------------- Server ----------------------|
+
+gulp.task('serve-dev', function() {
+    var isDev = true;
+
+    var nodeOptions = {
+        script: config.nodeServer,
+        delayTime: 1,
+        env: {
+            'PORT': port,
+            'NODE_ENV': isDev ? 'dev' : 'build'
+        },
+        watch: [config.server]
+    };
+
+    return plug.nodemon(nodeOptions);
 });
 
 
