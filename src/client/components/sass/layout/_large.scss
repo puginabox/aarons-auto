@@ -1,10 +1,10 @@
 /*----------------------- @Large Screens -----------------------------*/
 
-@media all and (max-width: 700px) {
-
-  /*  watch task working?   */  
+@media all and (min-width: 1201px) {
+    body {
+        background: pink;
     
-    
+    }
     
     
 } // end of @media

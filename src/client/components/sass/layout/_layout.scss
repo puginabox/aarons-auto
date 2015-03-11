@@ -1,8 +1,7 @@
 /*----------------------- @Desktop -----------------------------*/
 
-@media all and (max-width: 700px) {
-
-/* ????   */    
-    
-    
+@media all and (min-width: 901px) and (max-width: 1200px) {
+    body {
+        background: orange;  
+    }
 } // end of @media

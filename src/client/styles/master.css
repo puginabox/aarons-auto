@@ -138,14 +138,16 @@ header h1 {
 }
 
 /*----------------------- @Mobile -----------------------------*/
-@media all and (max-width: 750px) {
-  /*  ???????????????ddddd     */
+@media all and (min-width: 0px) and (max-width: 401px) {
+  body {
+    background: green;
+  }
 }
 /*----------------------- @Tablets -----------------------------*/
-@media all and (min-width: 400px) and (max-width: 701px) {
+@media all and (min-width: 401px) and (max-width: 900px) {
   .main-menu {
     width: 100%;
-    height: 80px;
+    height: 50px;
     list-style: none;
     background: lightgray;
     margin: 0 auto;
@@ -166,11 +168,11 @@ header h1 {
 
   .main-menu ul li a {
     text-decoration: none;
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     font-weight: 100;
     opacity: 1;
     background: lightgray;
-    padding: 25px 1rem;
+    padding: 5px 0.1rem;
   }
 
   .main-menu ul li a:hover {
@@ -184,10 +186,14 @@ header h1 {
   }
 }
 /*----------------------- @Desktop -----------------------------*/
-@media all and (max-width: 700px) {
-  /* ????   */
+@media all and (min-width: 901px) and (max-width: 1200px) {
+  body {
+    background: orange;
+  }
 }
 /*----------------------- @Large Screens -----------------------------*/
-@media all and (max-width: 700px) {
-  /*  watch task working?   */
+@media all and (min-width: 1201px) {
+  body {
+    background: pink;
+  }
 }

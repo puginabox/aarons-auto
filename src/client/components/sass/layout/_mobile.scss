@@ -1,9 +1,9 @@
 /*----------------------- @Mobile -----------------------------*/
 
-@media all and (max-width: 750px) {
-
-    
-    /*  ???????????????ddddd     */
+@media all and (min-width: 0px) and (max-width: 401px) {
+    body {
+        background: green;
+    }
     
     
 } // end of @media
