@@ -127,8 +127,8 @@ footer {
   top: 0;
   height: 100px;
   list-style: none;
-  background: #576f7c;
-  border-bottom: 1px solid #3f1224;
+  background: rgba(87, 111, 124, 0.4);
+  border-bottom: 1px solid rgba(63, 18, 36, 0.01);
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
@@ -139,6 +139,8 @@ footer {
 
 #main-menu:hover {
   opacity: 1;
+  background: #576f7c;
+  border-bottom: 1px solid rgba(63, 18, 36, 0.2);
 }
 
 #main-menu ul {
