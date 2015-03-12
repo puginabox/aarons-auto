@@ -15,7 +15,7 @@ section article {
 
 /*-----------------sections -------------*/
 #about {
-    height: 600px;
+    height: 1200px;
     margin-top: 100px;
     h1 {
         display: none; /* hidden for SEO */
@@ -113,6 +113,7 @@ $clottedCream: #c6d2d6; // background;
     height: 700px;
     background: $gunMetal;
     h2 {
+        margin-top: -40px;
         color: $clottedCream; 
     }
     div, aside {

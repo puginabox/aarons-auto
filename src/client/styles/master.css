@@ -80,6 +80,7 @@ h2 {
 
 a {
   color: #3f1224;
+  text-decoration: none;
 }
 
 * {
@@ -128,7 +129,7 @@ footer {
   height: 100px;
   list-style: none;
   background: rgba(87, 111, 124, 0.4);
-  border-bottom: 1px solid rgba(63, 18, 36, 0.01);
+  border-bottom: 1px solid rgba(63, 18, 36, 0);
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
@@ -361,7 +362,7 @@ section article {
 
 /*-----------------sections -------------*/
 #about {
-  height: 600px;
+  height: 1200px;
   margin-top: 100px;
 }
 #about h1 {
@@ -449,6 +450,7 @@ section article {
   background: #576f7c;
 }
 #contact h2 {
+  margin-top: -40px;
   color: #c6d2d6;
 }
 #contact div, #contact aside {
