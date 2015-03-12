@@ -357,6 +357,9 @@ section, #services, #testimonials, #brands, #contact {
   float: right;
   width: 59%;
 }
+#about aside p {
+  width: 80%;
+}
 
 #services {
   top: 600px;
