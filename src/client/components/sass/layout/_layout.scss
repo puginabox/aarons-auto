@@ -4,10 +4,13 @@ section, #services, #testimonials, #brands, #contact {
     //remove all these ID's after finished
     height: 600px;
     display: block;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 20px;
 }
-
+// to compensave for scrollto and opacity effect
+section article {
+    margin-top: 90px;
+}
 
 
 /*-----------------sections -------------*/
@@ -63,6 +66,7 @@ section, #services, #testimonials, #brands, #contact {
 /*----------------- Contact -------------*/
 #contact {
     top: 2000px;
+    height: 700px;
     background: gray;
     div, aside {
         height: 400px;

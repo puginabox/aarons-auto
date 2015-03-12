@@ -336,8 +336,12 @@ footer {
 section, #services, #testimonials, #brands, #contact {
   height: 600px;
   display: block;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 20px;
+}
+
+section article {
+  margin-top: 90px;
 }
 
 /*-----------------sections -------------*/
@@ -386,6 +390,7 @@ section, #services, #testimonials, #brands, #contact {
 /*----------------- Contact -------------*/
 #contact {
   top: 2000px;
+  height: 700px;
   background: gray;
 }
 #contact div, #contact aside {
