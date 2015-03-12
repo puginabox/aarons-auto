@@ -3,8 +3,18 @@
 @media all and (min-width: 0px) and (max-width: 600px) {
     
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ for testing
-    body {
-        background: green;
+    body::before {
+        content: "mobile media query (breakpoint: 50px/600px)";
+        display: block;
+        text-align: center;
+        background: rgba(0,178,255, 0.6);
+        color: #FFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 5px 0;          
+        z-index: 99;
     }
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing
 

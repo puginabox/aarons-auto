@@ -32,8 +32,15 @@
         top: 2000px;
         background: gray;
     }        
-
-    
+//-----------------sections -------------|
+    #about, #services, #testimonials, #brands, #contact {
+        width: 80%;
+        text-align: center;
+        height: 200px;
+        margin: 10px auto;
+        padding: 10px;
+        baborder: 1px solid gray;
+    }
     
     
     

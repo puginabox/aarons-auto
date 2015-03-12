@@ -1,9 +1,19 @@
 /*----------------------- @Large Screens -----------------------------*/
 
 @media all and (min-width: 1201px) {
-    body {
-        background: red;
-    
+    body::before {
+        content: "Large screens media query (breakpoint: 901px)";
+        letter-spacing: 2px;
+        display: block;
+        text-align: center;
+        background: rgba(0,178,255, 0.6);
+        color: #FFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 5px 0;          
+        z-index: 99;
     }
 
 } // end of @media

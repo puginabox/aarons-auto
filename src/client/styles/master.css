@@ -139,8 +139,18 @@ header h1 {
 
 /*----------------------- @Mobile -----------------------------*/
 @media all and (min-width: 0px) and (max-width: 600px) {
-  body {
-    background: green;
+  body::before {
+    content: "mobile media query (breakpoint: 50px/600px)";
+    display: block;
+    text-align: center;
+    background: rgba(0, 178, 255, 0.6);
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+    z-index: 99;
   }
 
   #burger-menu {
@@ -158,6 +168,20 @@ header h1 {
 }
 /*----------------------- @Tablets -----------------------------*/
 @media all and (min-width: 601px) and (max-width: 900px) {
+  body::before {
+    content: "tablet media query (breakpoint: 601px/900px)";
+    display: block;
+    text-align: center;
+    background: rgba(127, 219, 255, 0.6);
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 5px 0;
+  }
+
   #burger-menu {
     display: none;
   }
@@ -237,11 +261,31 @@ header h1 {
     top: 2000px;
     background: gray;
   }
+
+  #about, #services, #testimonials, #brands, #contact {
+    width: 80%;
+    text-align: center;
+    height: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    baborder: 1px solid gray;
+  }
 }
 /*----------------------- @Large Screens -----------------------------*/
 @media all and (min-width: 1201px) {
-  body {
-    background: red;
+  body::before {
+    content: "Large screens media query (breakpoint: 901px)";
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    background: rgba(0, 178, 255, 0.6);
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+    z-index: 99;
   }
 }
 .hamburger {
