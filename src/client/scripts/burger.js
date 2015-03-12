@@ -1,15 +1,14 @@
-$(".cross").hide();
-$("#burger-menu").hide();
-$(".hamburger").click(function () {
-    $("#burger-menu").slideToggle("slow", function () {
-        $(".hamburger").hide();
-        $(".cross").show();
+$(".cross-hamburger").hide();
+$(".hamburger-menu").hide();
+$(".hamburger-button").click(function () {
+    $(".hamburger-menu").slideToggle(200, 'easeInOutQuart', function () {
+        $(".hamburger-button").hide();
+        $(".cross-hamburger").show();
     });
 });
-
-$(".cross").click(function () {
-    $("#burger-menu").slideToggle("slow", function () {
-        $(".cross").hide();
-        $(".hamburger").show();
+$(".cross-hamburger").click(function () {
+    $(".hamburger-menu").slideToggle(200, 'easeInOutQuart', function () {
+        $(".cross-hamburger").hide();
+        $(".hamburger-button").show();
     });
 });

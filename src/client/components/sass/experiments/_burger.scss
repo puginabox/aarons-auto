@@ -1,74 +1,103 @@
-.hamburger {
+.mobile header {
+    width: 100%;
+    background: #1d1f20;
+    height: 50px;
+    line-height: 50px;
+}
+.hamburger-button {
     background: none;
     position: absolute;
     top: 0;
     right: 0;
     line-height: 45px;
     padding: 0px 15px 0px 15px;
-    /*    color: lightgray;*/
-    color: black;
+    color: #fff;
     border: 0;
     font-size: 1.4em;
-    /*    font-weight: bold;*/
+    font-weight: bold;
     cursor: pointer;
     outline: none;
     z-index: 10000000000000;
 }
-.cross {
+
+.cross-hamburger {
     background: none;
     position: absolute;
     top: 0px;
     right: 0;
     padding: 0px 15px 0px 15px;
-    color: black;
+    color: #fff;
     border: 0;
     font-size: 3em;
     line-height: 65px;
-    /*    font-weight: bold;*/
+    font-weight: bold;
     cursor: pointer;
     outline: none;
     z-index: 10000000000000;
 }
-#burger-menu {
+.hamburger-menu {
     z-index: 1000000;
-    /*    font-weight: bold;*/
+    font-weight: bold;
     font-size: 0.8em;
     width: 100%;
-    background: pink;
-    position: absolute;
-    text-align: center;
-    left: -99999px;
-}
-#burger-menu ul {
-    margin: 0;
+    margin: 0 auto;
+    background: #131313;
     padding: 0;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
     list-style-type: none;
     list-style-image: none;
 }
-#burger-menu li {
+.hamburger-menu li {
     display: block;
+    width: 80%;
+    margin: 0 auto;
     padding: 15px 0 15px 0;
     border-bottom: #1d1f20 1px solid;
 }
-#burger-menu li:hover {
-    display: block;
-    background: orange;
+.hamburger-menu li:hover {
+    background: #181818;
     padding: 15px 0 15px 0;
     border-bottom: #1d1f20 1px solid;
 }
-#burger-menu ul li a {
+.hamburger-menu ul li a {
     text-decoration: none;
     margin: 0px;
     color: #fff;
 }
-#burger-menu ul li a:hover {
+.hamburger-menu ul li a:hover {
     color: #fff;
     text-decoration: none;
 }
-#burger-menu a {
+.hamburger-menu a {
     text-decoration: none;
     color: white;
 }
-#burger-menu a:hover {
-    text-decoration: none;
+.mobile {
+    margin: 0 auto;
+    text-align: center;
+    display: none;
 }
+/*----------------------- @Mobile -----------------------------*/
+@media all and (min-width: 0px) and (max-width: 600px) {
+    /* -~~~~~~~~~~~~~~~~~~~~~~~~~~~ for testing */
+    body::before {
+        content: "mobile (breakpoint: 50px/600px)";
+        display: block;
+        text-align: center;
+        background: rgba(0, 178, 255, 0.6);
+        color: #FFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 2px 0;
+        z-index: 99;
+    }
+    /* -~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing */
+    .mobile {
+        display: block;
+    }
+}
+/* end of @media */
