@@ -317,7 +317,6 @@ header h1 {
     top: 800px;
   }
 }
-/*----------------------- @Desktop -----------------------------*/
 section, #services, #testimonials, #brands, #contact {
   height: 600px;
   display: block;
@@ -365,9 +364,25 @@ section, #services, #testimonials, #brands, #contact {
   background: orange;
 }
 
+/*----------------- Contact -------------*/
 #contact {
   top: 2000px;
   background: gray;
+}
+#contact div, #contact aside {
+  height: 400px;
+  padding: 5px 0.5%;
+  margin: 5px 0;
+  background: pink;
+  text-align: left;
+}
+#contact div {
+  float: right;
+  width: 38%;
+}
+#contact aside {
+  float: left;
+  width: 58%;
 }
 
 /*----------------------- @Large Screens -----------------------------*/
