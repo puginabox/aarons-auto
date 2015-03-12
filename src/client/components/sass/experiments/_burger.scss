@@ -1,0 +1,74 @@
+.hamburger {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 0px 15px 0px 15px;
+    /*    color: lightgray;*/
+    color: black;
+    border: 0;
+    font-size: 1.4em;
+    /*    font-weight: bold;*/
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+.cross {
+    background: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 0px 15px 0px 15px;
+    color: black;
+    border: 0;
+    font-size: 3em;
+    line-height: 65px;
+    /*    font-weight: bold;*/
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+#burger-menu {
+    z-index: 1000000;
+    /*    font-weight: bold;*/
+    font-size: 0.8em;
+    width: 100%;
+    background: pink;
+    position: absolute;
+    text-align: center;
+    left: -99999px;
+}
+#burger-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+#burger-menu li {
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid;
+}
+#burger-menu li:hover {
+    display: block;
+    background: orange;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid;
+}
+#burger-menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #fff;
+}
+#burger-menu ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+#burger-menu a {
+    text-decoration: none;
+    color: white;
+}
+#burger-menu a:hover {
+    text-decoration: none;
+}

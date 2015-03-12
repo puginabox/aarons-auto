@@ -8,13 +8,31 @@
     }
     //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing
 
-    #burger-menu {
-        display: none;
-    }    
-    
-    
-    
-    
+    #about, #services, #testimonials, #brands, #contact {
+        position: absolute;
+        height: 200px;
+    }
+    #about {
+        top: 500px;
+        background: green;
+    }
+    #services {
+        top: 1000px;
+        background: red;
+    }
+    #testimonials {
+        top: 1500px;
+        background: lightblue;        
+    } 
+    #brands {
+        top: 2000px;
+        background: orange;
+    }        
+    #contact {
+        top: 2000px;
+        background: gray;
+    }        
+
     
     
     

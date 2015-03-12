@@ -144,7 +144,12 @@ header h1 {
   }
 
   #burger-menu {
-    display: block;
+    left: 0;
+    width: 100%;
+    background: blue;
+    z-index: 99999999999999;
+    float: left;
+    height: 200px;
   }
 
   #main-menu {
@@ -203,8 +208,34 @@ header h1 {
     background: pink;
   }
 
-  #burger-menu {
-    display: none;
+  #about, #services, #testimonials, #brands, #contact {
+    position: absolute;
+    height: 200px;
+  }
+
+  #about {
+    top: 500px;
+    background: green;
+  }
+
+  #services {
+    top: 1000px;
+    background: red;
+  }
+
+  #testimonials {
+    top: 1500px;
+    background: lightblue;
+  }
+
+  #brands {
+    top: 2000px;
+    background: orange;
+  }
+
+  #contact {
+    top: 2000px;
+    background: gray;
   }
 }
 /*----------------------- @Large Screens -----------------------------*/
@@ -212,8 +243,87 @@ header h1 {
   body {
     background: red;
   }
+}
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 0px 15px 0px 15px;
+  /*    color: lightgray;*/
+  color: black;
+  border: 0;
+  font-size: 1.4em;
+  /*    font-weight: bold;*/
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
 
-  #burger-menu {
-    display: none;
-  }
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 0px 15px 0px 15px;
+  color: black;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  /*    font-weight: bold;*/
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+
+#burger-menu {
+  z-index: 1000000;
+  /*    font-weight: bold;*/
+  font-size: 0.8em;
+  width: 100%;
+  background: pink;
+  position: absolute;
+  text-align: center;
+  left: -99999px;
+}
+
+#burger-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+#burger-menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #1d1f20 1px solid;
+}
+
+#burger-menu li:hover {
+  display: block;
+  background: orange;
+  padding: 15px 0 15px 0;
+  border-bottom: #1d1f20 1px solid;
+}
+
+#burger-menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #fff;
+}
+
+#burger-menu ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#burger-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+#burger-menu a:hover {
+  text-decoration: none;
 }
