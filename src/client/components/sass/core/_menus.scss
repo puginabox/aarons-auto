@@ -1,0 +1,115 @@
+#main-menu {
+width: 100%;
+height: 100px;
+list-style: none;
+background: lightgray;
+margin: 0 auto;
+text-align: center;
+}
+#main-menu ul {
+list-style: none;
+display: inline;
+overflow: hidden;
+}
+#main-menu ul li {
+display: inline-block;
+margin: 1rem;
+padding: 20px 0;
+
+}
+#main-menu ul li a {
+text-decoration: none;
+font-size: 1.2rem;
+font-weight: 100;
+opacity: 1;
+background: lightgray;
+padding: 45px 1rem;
+}
+#main-menu ul li a:hover {
+opacity: 0.5;
+background: gray;
+}
+
+/******************************** Burger Menu ************************************/
+
+.mobile header {
+    width: 100%;
+    background: #1d1f20;
+    height: 50px;
+    line-height: 50px;
+}
+.hamburger-button {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 0px 15px 0px 15px;
+    color: #fff;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+.cross-hamburger {
+    background: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 0px 15px 0px 15px;
+    color: #fff;
+    border: 0;
+    font-size: 3em;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+.hamburger-menu {
+    z-index: 1000000;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    margin: 0 auto;
+    background: #131313;
+    padding: 0;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    list-style-image: none;
+}
+.hamburger-menu li {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid;
+}
+.hamburger-menu li:hover {
+    background: #181818;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid;
+}
+.hamburger-menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #fff;
+}
+.hamburger-menu ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.hamburger-menu a {
+    text-decoration: none;
+    color: white;
+}
+.mobile {
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}

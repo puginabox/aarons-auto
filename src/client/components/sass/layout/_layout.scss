@@ -1,6 +1,6 @@
 /*----------------------- @Desktop -----------------------------*/
 
-@media all and (min-width: 901px) and (max-width: 1200px) {
+//@media all and (min-width: 901px) and (max-width: 1200px) {
 
     //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ for testing
     body {
@@ -9,15 +9,21 @@
     //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing
 
     #about, #services, #testimonials, #brands, #contact {
-        position: absolute;
-        height: 200px;
+//        position: absolute;
+        height: 600px;
+        display: block;
+        margin: 20px auto;
+        padding: 20px;
+        width: 100%;
+        background: pink;
+        border: 1px solid black;
     }
     #about {
-        top: 500px;
+        top: 0;
         background: green;
     }
     #services {
-        top: 1000px;
+        top: 600px;
         background: red;
     }
     #testimonials {
@@ -45,4 +51,4 @@
     
     
     
-} // end of @media
+//} // end of @media
