@@ -20,6 +20,11 @@ section article {
     h1 {
         display: none; /* hidden for SEO */
     }
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
     div, aside {
         height: 300px;
         padding: 5px 0.5%;

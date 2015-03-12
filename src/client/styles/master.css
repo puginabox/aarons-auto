@@ -353,6 +353,11 @@ section article {
   display: none;
   /* hidden for SEO */
 }
+#about img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 #about div, #about aside {
   height: 300px;
   padding: 5px 0.5%;
