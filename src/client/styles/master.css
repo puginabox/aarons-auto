@@ -355,14 +355,14 @@ section article {
 }
 #about img {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 4%;
+  top: 2%;
+  max-width: 400px;
 }
 #about div, #about aside {
   height: 300px;
   padding: 5px 0.5%;
   margin: 5px 0;
-  background: pink;
   text-align: left;
 }
 #about div {
