@@ -2,24 +2,19 @@
 
 //@media all and (min-width: 901px) and (max-width: 1200px) {
 
-    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ for testing
-    body {
-        background: pink;
-    }
-    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing
 
+//-----------------sections -------------|
     #about, #services, #testimonials, #brands, #contact {
 //        position: absolute;
         height: 600px;
         display: block;
-        margin: 20px auto;
+        margin: 40px auto;
         padding: 20px;
         width: 100%;
-        background: pink;
-        border: 1px solid black;
     }
     #about {
         top: 0;
+        margin-top: 0;
         background: green;
     }
     #services {
@@ -38,15 +33,8 @@
         top: 2000px;
         background: gray;
     }        
-//-----------------sections -------------|
-    #about, #services, #testimonials, #brands, #contact {
-        width: 80%;
-        text-align: center;
-        height: 200px;
-        margin: 10px auto;
-        padding: 10px;
-        baborder: 1px solid gray;
-    }
+
+
     
     
     
