@@ -1,35 +1,35 @@
+
 #main-menu {
-width: 100%;
-height: 100px;
-list-style: none;
-background: lightgray;
-margin: 0 auto;
-text-align: center;
+    width: 100%;
+    height: 100px;
+    list-style: none;
+    background: lightgray;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
 }
 #main-menu ul {
-list-style: none;
-display: inline;
-overflow: hidden;
+    list-style: none;
+    display: inline;
+    overflow: hidden;
 }
 #main-menu ul li {
-display: inline-block;
-margin: 1rem;
-padding: 20px 0;
-
+    display: inline-block;
+    margin: 1rem;
+    padding: 20px 0;
 }
 #main-menu ul li a {
-text-decoration: none;
-font-size: 1.2rem;
-font-weight: 100;
-opacity: 1;
-background: lightgray;
-padding: 45px 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+    opacity: 1;
+    background: lightgray;
+    padding: 45px 1rem;
 }
 #main-menu ul li a:hover {
-opacity: 0.5;
-background: gray;
+    opacity: 0.5;
+    background: gray;
 }
-
 /******************************** Burger Menu ************************************/
 
 .mobile header {
@@ -53,7 +53,6 @@ background: gray;
     outline: none;
     z-index: 10000000000000;
 }
-
 .cross-hamburger {
     background: none;
     position: absolute;

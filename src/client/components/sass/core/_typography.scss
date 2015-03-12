@@ -1,2 +1,18 @@
-
-
+p,li,a,h1,h2,h3,h4,h5 {
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+p {
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+h2 {
+    font-size: 2rem;
+    padding: 0.6rem 0;
+    line-height: 2;
+    font-weight: 400;
+}

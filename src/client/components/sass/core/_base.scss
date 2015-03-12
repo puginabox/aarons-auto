@@ -1,12 +1,6 @@
 * {
     box-sizing: border-box;
     outline: 0 !important;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: .6s;
-    transition-duration: .6s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease;
 }
 body {
     width: 100%;
@@ -16,12 +10,6 @@ body {
     position: relative;
     font-family: 'Droid Sans', sans-serif;
     font-size: 12px; /* for rems */
-}
-header, section {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-
 }
 header h1 {
     display: none;

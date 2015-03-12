@@ -55,15 +55,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+p, li, a, h1, h2, h3, h4, h5 {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0.6rem 0;
+  line-height: 2;
+  font-weight: 400;
+}
+
 * {
   box-sizing: border-box;
   outline: 0 !important;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: .6s;
-  transition-duration: .6s;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
 }
 
 body {
@@ -75,12 +90,6 @@ body {
   font-family: 'Droid Sans', sans-serif;
   font-size: 12px;
   /* for rems */
-}
-
-header, section {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
 }
 
 header h1 {
@@ -104,6 +113,7 @@ header h1 {
   background: lightgray;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 
 #main-menu ul {
@@ -308,18 +318,36 @@ header h1 {
   }
 }
 /*----------------------- @Desktop -----------------------------*/
-#about, #services, #testimonials, #brands, #contact {
+section, #services, #testimonials, #brands, #contact {
   height: 600px;
   display: block;
   margin: 40px auto;
   padding: 20px;
-  width: 100%;
 }
 
+/*-----------------sections -------------*/
 #about {
-  top: 0;
+  height: 600px;
   margin-top: 0;
-  background: green;
+}
+#about h1 {
+  display: none;
+  /* hidden for SEO */
+}
+#about div, #about aside {
+  height: 300px;
+  padding: 5px 0.5%;
+  margin: 5px 0;
+  background: pink;
+  text-align: left;
+}
+#about div {
+  float: left;
+  width: 39%;
+}
+#about aside {
+  float: right;
+  width: 59%;
 }
 
 #services {
