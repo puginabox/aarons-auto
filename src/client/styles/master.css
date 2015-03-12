@@ -64,9 +64,10 @@ p, li, a, h1, h2, h3, h4, h5 {
 
 p {
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
+  color: #576f7c;
 }
 
 h2 {
@@ -74,6 +75,11 @@ h2 {
   padding: 0.6rem 0;
   line-height: 2;
   font-weight: 400;
+  color: #fa550a;
+}
+
+a {
+  color: #3f1224;
 }
 
 * {
@@ -90,6 +96,7 @@ body {
   font-family: 'Droid Sans', sans-serif;
   font-size: 12px;
   /* for rems */
+  background: #c6d2d6;
 }
 
 header h1 {
@@ -120,13 +127,13 @@ footer {
   top: 0;
   height: 100px;
   list-style: none;
-  background: lightgray;
+  background: #576f7c;
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
   position: fixed;
   opacity: 0.9;
-  z-index: 99999;
+  z-index: 999;
 }
 
 #main-menu:hover {
@@ -150,13 +157,17 @@ footer {
   font-size: 1.2rem;
   font-weight: 100;
   opacity: 1;
-  background: lightgray;
+  color: #3f1224;
+  background: rgba(63, 18, 36, 0);
   padding: 45px 1rem;
+  z-index: 999;
 }
 
 #main-menu ul li a:hover {
   opacity: 0.5;
-  background: gray;
+  color: #c6d2d6;
+  background: #3f1224;
+  z-index: 9999;
 }
 
 /******************************** Burger Menu ************************************/
@@ -378,9 +389,36 @@ section article {
   width: 80%;
 }
 
+/*----------------- Services -------------*/
 #services {
   top: 600px;
-  background: red;
+  background-color: #3f1224;
+}
+#services h2 {
+  color: #c6d2d6;
+}
+#services article {
+  width: 100%;
+  margin: inherit 0 inherit 0;
+}
+#services div {
+  display: inline-block;
+  width: 24%;
+  margin: 20px 0;
+  padding: 0;
+  height: 250px;
+}
+#services div img {
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+}
+#services div p {
+  font-size: 1.3rem;
+  padding: 10px 5%;
+}
+#services div h3 {
+  font-size: 1.4rem;
 }
 
 #testimonials {

@@ -49,16 +49,37 @@ section article {
 
 
 
-
-
-
-
-
-
-
+/*----------------- Services -------------*/
 #services {
     top: 600px;
-    background: red;
+    background-color: $wine;
+    h2 {
+        color: $clottedCream;
+    }
+    article {
+        width: 100%;
+        margin: inherit 0 inherit 0;
+    }
+    div {
+        display: inline-block;
+        width: 24%;
+        margin: 20px 0;
+        padding: 0;
+        height: 250px;
+//        background: $clottedCream;
+        img {
+            max-width: 100%;
+            width: 150px;
+            height: 150px;
+        }
+        p {
+            font-size: 1.3rem;
+            padding: 10px 5%;
+        }
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
 }
 #testimonials {
     top: 1500px;
