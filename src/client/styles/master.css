@@ -128,6 +128,7 @@ footer {
   height: 100px;
   list-style: none;
   background: #576f7c;
+  border-bottom: 1px solid #3f1224;
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
@@ -425,10 +426,18 @@ section article {
   top: 1500px;
   background: #faaa00;
 }
+#testimonials h2 {
+  color: #3f1224;
+}
 
 #brands {
   top: 2000px;
   background: #fa550a;
+}
+#brands h2 {
+  margin-top: -40px;
+  font-size: 2.4rem;
+  color: #3f1224;
 }
 
 /*----------------- Contact -------------*/

@@ -84,10 +84,18 @@ section article {
 #testimonials {
     top: 1500px;
     background: $mustard;
+    h2 {
+        color: $wine;
+    }
 }
 #brands {
     top: 2000px;
     background: $burntOrange;
+    h2 {
+        margin-top: -40px;
+        font-size: 2.4rem;
+        color: $wine;
+    }
 }
 
 $burntOrange: #fa550a; // h2's
