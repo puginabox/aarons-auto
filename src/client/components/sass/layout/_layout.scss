@@ -69,8 +69,8 @@ section article {
 //        background: $clottedCream;
         img {
             max-width: 100%;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
         }
         p {
             font-size: 1.3rem;
@@ -83,18 +83,30 @@ section article {
 }
 #testimonials {
     top: 1500px;
-    background: lightblue;
+    background: $mustard;
 }
 #brands {
     top: 2000px;
-    background: orange;
+    background: $burntOrange;
 }
+
+$burntOrange: #fa550a; // h2's
+$wine: #3f1224;    // other headings
+$mustard: #faaa00; //anchor:hover
+$gunMetal: #576f7c;  // anchors
+$neoBlack: #1e1914; // text
+$clottedCream: #c6d2d6; // background;
+
+
 
 /*----------------- Contact -------------*/
 #contact {
     top: 2000px;
     height: 700px;
-    background: gray;
+    background: $gunMetal;
+    h2 {
+        color: $clottedCream; 
+    }
     div, aside {
         height: 400px;
         padding: 5px 0.5%;

@@ -410,8 +410,8 @@ section article {
 }
 #services div img {
   max-width: 100%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 #services div p {
   font-size: 1.3rem;
@@ -423,19 +423,22 @@ section article {
 
 #testimonials {
   top: 1500px;
-  background: lightblue;
+  background: #faaa00;
 }
 
 #brands {
   top: 2000px;
-  background: orange;
+  background: #fa550a;
 }
 
 /*----------------- Contact -------------*/
 #contact {
   top: 2000px;
   height: 700px;
-  background: gray;
+  background: #576f7c;
+}
+#contact h2 {
+  color: #c6d2d6;
 }
 #contact div, #contact aside {
   height: 400px;
