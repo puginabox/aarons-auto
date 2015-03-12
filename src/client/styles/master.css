@@ -126,6 +126,7 @@ footer {
   overflow: hidden;
   position: fixed;
   opacity: 0.9;
+  z-index: 99999;
 }
 
 #main-menu:hover {
