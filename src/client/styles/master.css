@@ -128,13 +128,12 @@ footer {
   top: 0;
   height: 100px;
   list-style: none;
-  background: rgba(87, 111, 124, 0.4);
+  background: rgba(87, 111, 124, 0.8);
   border-bottom: 1px solid rgba(63, 18, 36, 0);
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
   position: fixed;
-  opacity: 0.9;
   z-index: 999;
 }
 
@@ -159,7 +158,7 @@ footer {
 #main-menu ul li a {
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: 400;
   opacity: 1;
   color: #3f1224;
   background: rgba(63, 18, 36, 0);
@@ -356,20 +355,20 @@ section, #services, #testimonials, #brands, #contact {
   padding: 20px;
 }
 
-section article {
+section article.wrapper {
   margin-top: 90px;
 }
 
 /*-----------------sections -------------*/
 #about {
   height: 1200px;
-  margin-top: 100px;
+  margin: 100px auto;
 }
 #about h1 {
   display: none;
   /* hidden for SEO */
 }
-#about img {
+#about img.banner {
   position: absolute;
   left: 4%;
   top: 2%;
@@ -393,13 +392,55 @@ section article {
   width: 80%;
 }
 
+#the-team {
+  height: 300px;
+  width: 100%;
+  float: left;
+  display: block;
+  margin: 0px auto;
+  padding: 0;
+  text-align: center;
+  z-index: 9999999;
+}
+#the-team article {
+  margin-top: 200px;
+}
+#the-team .team {
+  display: inline-block;
+  width: 33.3333%;
+  margin: 20px 0;
+  padding: 0;
+  height: 250px;
+  text-align: center;
+}
+#the-team .team img {
+  max-width: 100%;
+  width: 280px;
+  height: 200px;
+  background: white;
+}
+#the-team .team p {
+  font-size: 0.9rem;
+  padding: 5px 5%;
+  margin: 5px auto;
+}
+#the-team .team h3 {
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+
 /*----------------- Services -------------*/
 #services {
   top: 600px;
   background-color: #3f1224;
+  padding: 4px 0;
+  margin: 0;
 }
 #services h2 {
   color: #c6d2d6;
+  font-size: 2rem;
+  padding: 0;
+  line-height: 1;
 }
 #services article {
   width: 100%;
@@ -410,7 +451,15 @@ section article {
   width: 24%;
   margin: 20px 0;
   padding: 0;
+  height: 350px;
+  text-align: left;
+}
+#services div .services-wrapper {
+  width: 100%;
   height: 250px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 #services div img {
   max-width: 100%;
@@ -418,11 +467,25 @@ section article {
   height: 200px;
 }
 #services div p {
-  font-size: 1.3rem;
-  padding: 10px 5%;
+  font-size: 0.8rem;
+  padding: 5px 5% 2px 0;
+  color: #c6d2d6;
 }
 #services div h3 {
   font-size: 1.4rem;
+  margin: 5px 0;
+}
+#services div ul {
+  list-style: circle;
+  width: 80%;
+  padding: 0 20px;
+  margin: 0;
+  color: #c6d2d6;
+}
+#services div ul li {
+  font-size: 0.6rem;
+  padding: 3px 0;
+  line-height: 160%;
 }
 
 #testimonials {

@@ -4,13 +4,13 @@
     top: 0;
     height: 100px;
     list-style: none;
-    background: rgba($gunMetal, 0.4);
+    background: rgba($gunMetal, 0.8);
     border-bottom: 1px solid rgba($wine, 0);
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
     position: fixed;
-    opacity: 0.9;
+//    opacity: 0.9;
     z-index: 999;
 }
 #main-menu:hover {
@@ -31,7 +31,7 @@
 #main-menu ul li a {
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 400;
     opacity: 1;
     color: $wine;
     background: rgba($wine, 0);
