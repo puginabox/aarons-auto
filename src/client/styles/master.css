@@ -495,6 +495,54 @@ section article.wrapper {
 #testimonials h2 {
   color: #3f1224;
 }
+#testimonials .bubble-triangle {
+  margin-left: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 70px 0 0;
+  border-color: #c6d2d6 transparent transparent transparent;
+}
+#testimonials .wrapper blockquote {
+  width: 230px;
+  height: 140px;
+  display: inline-block;
+  margin: 20px;
+  padding: 5px;
+}
+#testimonials blockquote p.bubble {
+  font-style: italic;
+}
+#testimonials blockquote p.bubble cite {
+  display: block;
+  width: 90%;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: right;
+}
+#testimonials .wrapper blockquote .bubble {
+  width: 220px;
+  height: 60px;
+  padding: 20px;
+  overflow: hidden;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  color: #3f1224;
+  background: #c6d2d6;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+#testimonials .wrapper blockquote .bubble-triangle {
+  margin-top: -50px;
+  margin-left: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 70px 0 0;
+  border-color: #c6d2d6 transparent transparent transparent;
+}
 
 #brands {
   top: 2000px;
