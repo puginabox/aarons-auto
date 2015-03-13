@@ -361,7 +361,7 @@ section article.wrapper {
 
 /*-----------------sections -------------*/
 #about {
-  height: 1200px;
+  height: 1100px;
   margin: 100px auto;
 }
 #about h1 {
@@ -410,7 +410,7 @@ section article.wrapper {
   width: 33.3333%;
   margin: 20px 0;
   padding: 0;
-  height: 250px;
+  height: auto;
   text-align: center;
 }
 #the-team .team img {
@@ -504,26 +504,26 @@ section article.wrapper {
   border-color: #c6d2d6 transparent transparent transparent;
 }
 #testimonials .wrapper blockquote {
-  width: 230px;
-  height: 140px;
+  width: 20%;
+  height: auto;
   display: inline-block;
-  margin: 20px;
-  padding: 5px;
+  margin: 0;
+  padding: 5px 0;
 }
 #testimonials blockquote p.bubble {
   font-style: italic;
 }
 #testimonials blockquote p.bubble cite {
   display: block;
-  width: 90%;
+  width: 100%;
   font-size: 1rem;
   line-height: 1.8;
   font-weight: 400;
   text-align: right;
 }
 #testimonials .wrapper blockquote .bubble {
-  width: 220px;
-  height: 60px;
+  width: 70%;
+  height: auto;
   padding: 20px;
   overflow: hidden;
   font-size: 0.7rem;
@@ -556,9 +556,7 @@ section article.wrapper {
 
 /*----------------- Contact -------------*/
 #contact {
-  top: 2000px;
   height: 700px;
-  background: #576f7c;
 }
 #contact h2 {
   margin-top: -40px;

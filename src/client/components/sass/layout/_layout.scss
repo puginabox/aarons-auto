@@ -15,7 +15,7 @@ section article.wrapper {
 
 /*-----------------sections -------------*/
 #about {
-    height: 1200px;
+    height: 1100px;
     margin: 100px auto;
     h1 {
         display: none; /* hidden for SEO */
@@ -62,7 +62,7 @@ section article.wrapper {
         width: 33.3333%;
         margin: 20px 0;
         padding: 0;
-        height: 250px;
+        height: auto;
         text-align: center;
         img {
             max-width: 100%;
@@ -158,27 +158,27 @@ section article.wrapper {
         border-color: $clottedCream transparent transparent transparent;
     }
     .wrapper blockquote {
-        width: 230px;
-        height: 140px;
+        width: 20%;
+        height: auto;
         display: inline-block;
-        margin: 20px;
-        padding: 5px;
-
+        margin: 0;
+        padding: 5px 0;
     }
     blockquote  p.bubble {
         font-style: italic;        
     }
     blockquote  p.bubble cite {
         display: block;
-        width: 90%;
+        width: 100%;
         font-size: 1rem;
         line-height: 1.8;
         font-weight: 400;
         text-align: right;
+//        padding-bottom: 10px;
     }
     .wrapper blockquote .bubble {
-        width: 220px;
-        height: 60px;
+        width: 70%;
+        height: auto;
         padding: 20px;
         overflow: hidden;
         font-size: 0.7rem;
@@ -213,9 +213,9 @@ section article.wrapper {
 
 /*----------------- Contact -------------*/
 #contact {
-    top: 2000px;
+//    top: 2000px;
     height: 700px;
-    background: $gunMetal;
+//    background: $gunMetal;
     h2 {
         margin-top: -40px;
         color: $clottedCream; 
