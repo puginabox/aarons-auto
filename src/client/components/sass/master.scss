@@ -24,10 +24,12 @@
 @import 'core/menus';
 
 // Layout & Media Queries
-@import 'layout/mobile';
-@import 'layout/tablet';
+
 @import 'layout/layout';
+@import 'layout/desktop'; // just here in case...
 @import 'layout/large';
+@import 'layout/tablet';
+@import 'layout/mobile';
 
 // extras
 @import 'experiments/buttons';

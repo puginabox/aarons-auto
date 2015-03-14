@@ -264,148 +264,7 @@ footer {
   display: none;
 }
 
-/*----------------------- @Mobile -----------------------------*/
-@media all and (min-width: 0px) and (max-width: 600px) {
-  body::before {
-    content: "mobile media query (breakpoint: 50px/600px)";
-    display: block;
-    text-align: center;
-    background: rgba(0, 178, 255, 0.6);
-    color: #FFF;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 5px 0;
-    z-index: 99;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  #main-menu {
-    display: none;
-  }
-}
-/*----------------------- @Tablets -----------------------------*/
-@media all and (min-width: 601px) and (max-width: 900px) {
-  body::before {
-    content: "tablet media query (breakpoint: 601px/900px)";
-    display: block;
-    text-align: center;
-    background: rgba(127, 219, 255, 0.6);
-    color: #FFF;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    padding: 5px 0;
-  }
-
-  #burger-menu {
-    display: none;
-  }
-
-  #main-menu {
-    height: 50px;
-  }
-
-  #main-menu ul li {
-    display: inline-block;
-    margin: 0.5rem;
-    padding: 10px 0;
-  }
-
-  #main-menu ul li a {
-    font-size: 0.9rem;
-    padding: 5px;
-  }
-
-  /*----------------- About -------------*/
-  #about {
-    margin: 100px auto;
-  }
-  #about img.banner {
-    position: absolute;
-    left: 0.01%;
-    top: 2%;
-    width: 250px;
-    background: green;
-  }
-  #about div, #about aside {
-    height: 300px;
-    padding: 5px 0;
-    margin: 5px 0;
-  }
-  #about div {
-    width: 30%;
-  }
-  #about aside {
-    width: 56%;
-  }
-  #about aside p {
-    width: 90%;
-  }
-
-  #the-team {
-    height: 300px;
-    margin: 0px auto;
-    padding: 0;
-  }
-  #the-team article {
-    margin-top: 200px;
-  }
-  #the-team .team {
-    margin: 20px 0;
-    padding: 0;
-  }
-  #the-team .team img {
-    max-width: 100%;
-  }
-  #the-team .team p {
-    font-size: 0.9rem;
-    padding: 5px 5%;
-    margin: 5px auto;
-  }
-  #the-team .team h3 {
-    font-size: 1.6rem;
-    padding: 10px 0;
-  }
-
-  /*----------------- Services -------------*/
-  #services h2 {
-    color: #c6d2d6;
-    font-size: 2rem;
-    padding: 0;
-    line-height: 1;
-  }
-  #services article {
-    width: 100%;
-    margin: inherit 0 inherit 0;
-  }
-  #services div {
-    width: 43%;
-    margin: 20px 0;
-    padding: 0;
-    height: 350px;
-    text-align: left;
-  }
-  #services div .services-wrapper {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-  }
-  #services div img {
-    max-width: 100%;
-    width: 200px;
-    height: 200px;
-  }
-}
-section, #services, #testimonials, #brands, #contact {
+section, #services, #testimonials, #brands, #contact, footer {
   float: left;
   width: 100%;
   display: block;
@@ -445,7 +304,6 @@ section article.wrapper {
 #about aside {
   float: right;
   width: 56%;
-  margin-top: 100px;
 }
 #about aside p {
   width: 90%;
@@ -636,6 +494,7 @@ section article.wrapper {
   width: 58%;
 }
 
+/*----------------------- @Desktop -----------------------------*/
 /*----------------------- @Large Screens -----------------------------*/
 @media all and (min-width: 1201px) {
   body::before {
@@ -651,6 +510,157 @@ section article.wrapper {
     right: 0;
     padding: 5px 0;
     z-index: 9999999999999;
+  }
+}
+/*----------------------- @Tablets -----------------------------*/
+@media all and (min-width: 601px) and (max-width: 900px) {
+  body::before {
+    content: "tablet media query (breakpoint: 601px/900px)";
+    display: block;
+    text-align: center;
+    background: rgba(127, 219, 255, 0.6);
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 5px 0;
+    width: 100%;
+  }
+
+  #burger-menu {
+    display: none;
+  }
+
+  #main-menu {
+    height: 50px;
+  }
+
+  #main-menu ul li {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 10px 0;
+  }
+
+  #main-menu ul li a {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  section article.wrapper {
+    margin-top: 0;
+  }
+
+  /*----------------- About -------------*/
+  #about {
+    margin: 0;
+  }
+  #about img.banner {
+    position: absolute;
+    left: 0.01%;
+    width: 250px;
+  }
+  #about div, #about aside {
+    height: 300px;
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+  #about div {
+    width: 30%;
+  }
+  #about aside {
+    width: 56%;
+  }
+  #about aside p {
+    width: 90%;
+  }
+
+  #the-team {
+    height: 300px;
+    margin: 0px auto;
+    padding: 0;
+  }
+  #the-team article {
+    margin-top: 200px;
+  }
+  #the-team .team {
+    margin: 20px 0;
+    padding: 0;
+  }
+  #the-team .team img {
+    max-width: 100%;
+  }
+  #the-team .team p {
+    font-size: 0.9rem;
+    padding: 5px 5%;
+    margin: 5px auto;
+  }
+  #the-team .team h3 {
+    font-size: 1.6rem;
+    padding: 10px 0;
+  }
+
+  /*----------------- Services -------------*/
+  #services h2 {
+    color: #c6d2d6;
+    font-size: 2rem;
+    padding: 0;
+    line-height: 1;
+  }
+  #services article {
+    width: 100%;
+    margin: inherit 0 inherit 0;
+  }
+  #services div {
+    width: 43%;
+    margin: 20px 0;
+    padding: 0;
+    height: 350px;
+    text-align: left;
+  }
+  #services div .services-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  #services div img {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+  }
+}
+/*----------------------- @Mobile -----------------------------*/
+@media all and (min-width: 0px) and (max-width: 600px) {
+  body::before {
+    content: "mobile media query (breakpoint: 50px/600px)";
+    display: block;
+    text-align: center;
+    background: rgba(0, 178, 255, 0.6);
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+    z-index: 9999999;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  #main-menu {
+    display: none;
   }
 }
 .buttons {

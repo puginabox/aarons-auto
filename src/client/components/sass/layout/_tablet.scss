@@ -9,10 +9,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
         z-index: 9999;
         padding: 5px 0;
-    }    
+        width: 100%;
+    }
     #burger-menu {
         display: none;
     }    
@@ -29,16 +29,22 @@
         font-size: 0.9rem;
         padding: 5px;
     }
-    
+    h2 {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    section article.wrapper {
+        margin-top: 0;
+    }
 /*----------------- About -------------*/
     #about {
-        margin: 100px auto;
+        margin: 0;
         img.banner {
             position: absolute;
             left: 0.01%;
-            top: 2%;
             width: 250px;
-            background: green;
         }
         div, aside {
             height: 300px;
