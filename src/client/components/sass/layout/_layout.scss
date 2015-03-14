@@ -2,46 +2,48 @@
 //-----------------sections -------------|
 section, #services, #testimonials, #brands, #contact { 
     //remove all these ID's after finished
-    height: 600px;
+//    height: 600px;
+    float: left;
+    width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0;
 }
-// to compensave for scrollto and opacity effect
+// to compensate for scrollto and opacity effect
 section article.wrapper {
     margin-top: 90px;
 }
 
-
-/*-----------------sections -------------*/
+/*----------------- About -------------*/
 #about {
     height: 1100px;
-    margin: 100px auto;
+    margin: 80px auto;
     h1 {
         display: none; /* hidden for SEO */
     }
     img.banner {
         position: absolute;
-        left: 4%;
-        top: 2%;
+        left: 0.5%;
+        top: 100px;
         max-width: 400px;
     }
     div, aside {
         height: 300px;
-        padding: 5px 0.5%;
+        padding: 5px 0;
         margin: 5px 0;
 //        background: pink;
         text-align: left;
     }    
     div {
         float: left;
-        width: 39%;    
+        width: 37%;    
     }
     aside {
         float: right;
-        width: 59%;  
+        width: 56%; 
+        margin-top: 100px;
         p {
-            width: 80%;
+            width: 90%;
         }
     }
 }
@@ -86,7 +88,7 @@ section article.wrapper {
 
 /*----------------- Services -------------*/
 #services {
-    top: 600px;
+//    top: 600px;
     background-color: $wine;
     padding: 4px 0;
     margin: 0;
@@ -98,7 +100,7 @@ section article.wrapper {
     }
     article {
         width: 100%;
-        margin: inherit 0 inherit 0;
+        margin: inherit 0 inherit 0 ;
     }
     div {
         display: inline-block;

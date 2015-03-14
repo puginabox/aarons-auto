@@ -300,7 +300,7 @@ footer {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 9999;
     padding: 5px 0;
   }
 
@@ -309,18 +309,7 @@ footer {
   }
 
   #main-menu {
-    width: 100%;
     height: 50px;
-    list-style: none;
-    background: lightgray;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  #main-menu ul {
-    list-style: none;
-    display: inline;
-    overflow: hidden;
   }
 
   #main-menu ul li {
@@ -330,39 +319,108 @@ footer {
   }
 
   #main-menu ul li a {
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 100;
-    opacity: 1;
-    background: lightgray;
-    padding: 5px 0.1rem;
+    font-size: 0.9rem;
+    padding: 5px;
   }
 
-  #main-menu ul li a:hover {
-    opacity: 0.5;
-    background: gray;
-  }
-
+  /*----------------- About -------------*/
   #about {
+    margin: 100px auto;
+  }
+  #about img.banner {
     position: absolute;
-    top: 800px;
+    left: 0.01%;
+    top: 2%;
+    width: 250px;
+    background: green;
+  }
+  #about div, #about aside {
+    height: 300px;
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+  #about div {
+    width: 30%;
+  }
+  #about aside {
+    width: 56%;
+  }
+  #about aside p {
+    width: 90%;
+  }
+
+  #the-team {
+    height: 300px;
+    margin: 0px auto;
+    padding: 0;
+  }
+  #the-team article {
+    margin-top: 200px;
+  }
+  #the-team .team {
+    margin: 20px 0;
+    padding: 0;
+  }
+  #the-team .team img {
+    max-width: 100%;
+  }
+  #the-team .team p {
+    font-size: 0.9rem;
+    padding: 5px 5%;
+    margin: 5px auto;
+  }
+  #the-team .team h3 {
+    font-size: 1.6rem;
+    padding: 10px 0;
+  }
+
+  /*----------------- Services -------------*/
+  #services h2 {
+    color: #c6d2d6;
+    font-size: 2rem;
+    padding: 0;
+    line-height: 1;
+  }
+  #services article {
+    width: 100%;
+    margin: inherit 0 inherit 0;
+  }
+  #services div {
+    width: 43%;
+    margin: 20px 0;
+    padding: 0;
+    height: 350px;
+    text-align: left;
+  }
+  #services div .services-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  #services div img {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
   }
 }
 section, #services, #testimonials, #brands, #contact {
-  height: 600px;
+  float: left;
+  width: 100%;
   display: block;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 section article.wrapper {
   margin-top: 90px;
 }
 
-/*-----------------sections -------------*/
+/*----------------- About -------------*/
 #about {
   height: 1100px;
-  margin: 100px auto;
+  margin: 80px auto;
 }
 #about h1 {
   display: none;
@@ -370,26 +428,27 @@ section article.wrapper {
 }
 #about img.banner {
   position: absolute;
-  left: 4%;
-  top: 2%;
+  left: 0.5%;
+  top: 100px;
   max-width: 400px;
 }
 #about div, #about aside {
   height: 300px;
-  padding: 5px 0.5%;
+  padding: 5px 0;
   margin: 5px 0;
   text-align: left;
 }
 #about div {
   float: left;
-  width: 39%;
+  width: 37%;
 }
 #about aside {
   float: right;
-  width: 59%;
+  width: 56%;
+  margin-top: 100px;
 }
 #about aside p {
-  width: 80%;
+  width: 90%;
 }
 
 #the-team {
@@ -431,7 +490,6 @@ section article.wrapper {
 
 /*----------------- Services -------------*/
 #services {
-  top: 600px;
   background-color: #3f1224;
   padding: 4px 0;
   margin: 0;
@@ -592,7 +650,7 @@ section article.wrapper {
     left: 0;
     right: 0;
     padding: 5px 0;
-    z-index: 99;
+    z-index: 9999999999999;
   }
 }
 .buttons {
@@ -622,7 +680,7 @@ p a:hover {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  margin: 0;
+  margin: 10px 15px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -633,7 +691,7 @@ p a:hover {
 .btn-1 {
   font-weight: 100;
   background: none;
-  width: auto;
+  width: 250px;
   padding: 10px;
 }
 
@@ -647,6 +705,7 @@ p a:hover {
 
 .btn-1 rect {
   fill: none;
+  width: 100%;
   stroke: #576f7c;
   stroke-width: 1;
   stroke-dasharray: 422, 0;
