@@ -1,14 +1,21 @@
+
 .mobile header {
     width: 100%;
-    background: #1d1f20;
+    background: $wine;
     height: 50px;
     line-height: 50px;
+    position: fixed;
+    text-align: right;
+    right: 0;
+    top: 0;
 }
+
 .hamburger-button {
     background: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
+    width: 50px;
     line-height: 45px;
     padding: 0px 15px 0px 15px;
     color: #fff;
@@ -20,10 +27,12 @@
     z-index: 10000000000000;
 }
 
+
 .cross-hamburger {
     background: none;
-    position: absolute;
+    position: fixed;
     top: 0px;
+    width: 50px;
     right: 0;
     padding: 0px 15px 0px 15px;
     color: #fff;
@@ -35,13 +44,14 @@
     outline: none;
     z-index: 10000000000000;
 }
+
 .hamburger-menu {
-    z-index: 1000000;
+    z-index: 100000000000000000;
     font-weight: bold;
     font-size: 0.8em;
     width: 100%;
     margin: 0 auto;
-    background: #131313;
+    background: $wine;
     padding: 0;
     display: inline-block;
     padding: 0;
@@ -54,13 +64,16 @@
     width: 80%;
     margin: 0 auto;
     padding: 15px 0 15px 0;
-    border-bottom: #1d1f20 1px solid;
+    border-bottom: rgba($clottedCream, 0.4) 1px solid;
 }
 .hamburger-menu li:hover {
-    background: #181818;
+    background: $wine;
     padding: 15px 0 15px 0;
-    border-bottom: #1d1f20 1px solid;
+    border-bottom: rgba($clottedCream, 0.4) 1px solid;
 }
+
+//background: $wine;
+
 .hamburger-menu ul li a {
     text-decoration: none;
     margin: 0px;
@@ -79,25 +92,3 @@
     text-align: center;
     display: none;
 }
-/*----------------------- @Mobile -----------------------------*/
-@media all and (min-width: 0px) and (max-width: 600px) {
-    /* -~~~~~~~~~~~~~~~~~~~~~~~~~~~ for testing */
-    body::before {
-        content: "mobile (breakpoint: 50px/600px)";
-        display: block;
-        text-align: center;
-        background: rgba(0, 178, 255, 0.6);
-        color: #FFF;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 2px 0;
-        z-index: 99;
-    }
-    /* -~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing */
-    .mobile {
-        display: block;
-    }
-}
-/* end of @media */

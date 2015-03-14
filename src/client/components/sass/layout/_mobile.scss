@@ -20,11 +20,363 @@
 
     .mobile {
         display: block;
+        position: fixed;
+        width: 100%;
+        text-align: right;
     }
+    
     #main-menu {
         display: none;
     }    
-    
-    
-    
-} // end of @media
+        h2 {
+            font-size: 1.4rem;
+            padding: 0.4rem 0;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+        section article.wrapper {
+            margin-top: 0;
+        }
+        /*----------------- About -------------*/
+        #about {/*----------------------- @Mobile -----------------------------*/
+
+@media all and (min-width: 0px) and (max-width: 600px) {
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ for testing
+    body::before {
+        content: "mobile media query (breakpoint: 0/600px)";
+        display: block;
+        text-align: center;
+        background: rgba(0, 178, 255, 0.6);
+        color: #FFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 5px 0;
+        z-index: 9999999;
+    }
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~ end for testing
+    .mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        text-align: right;
+    }
+    #main-menu {
+        display: none;
+    }
+    h2 {
+        font-size: 1.1rem;
+        padding: 0.2rem 0;
+        line-height: 1;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+    section article.wrapper {
+        margin-top: 0;
+    }
+    /*----------------- About -------------*/
+    #about {
+        margin: 0;
+        height: 900px;
+        img.banner {
+            position: absolute;
+            left: 0;
+            width: 200px;
+        }
+        div,
+        aside {
+            height: 300px;
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 30%;
+        }
+        aside {
+            width: 56%;
+            padding-top: 60px;
+            p {
+                width: 90%;
+            }
+        }
+    }
+    #the-team {
+        height: 900px;
+        margin: 0;
+        padding: 0;
+        .wrapper {
+            margin-top: 2px;
+            .team {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+                padding: 0;
+                text-align: left;
+                border-bottom: 1px solid rgba($neoBlack, 0.1);
+                p:last-child {
+                    padding-bottom: 20px;
+                }
+                p {
+                    width: 100%;
+                    font-size: 0.9rem;
+                    float: left;
+                    padding: 5px;
+                    margin: 0;
+                    margin-left: 5px;
+                }
+                h3 {
+                    width: 46%;
+                    float: right;
+                    height: auto;
+                    font-size: 1.6rem;
+                    padding: 20px 0 10px 0;
+                }
+                .image-container {
+                    width: auto;
+                    padding: 0 3px 3px 5px;
+                    margin-left: 5px;
+                    float: left;
+                    img {
+                        width: 180px;
+                        height: 129px;
+                    }
+                }       
+            }
+            .team:nth-child(2) .image-container img {
+                content: url(../images/team/jasper-mobile.jpg);
+            }
+            .team:nth-child(3) .image-container img {
+                content: url(../images/team/sebastian-mobile.jpg);
+            }
+            .team:nth-child(4) .image-container img {
+                content: url(../images/team/oliver-mobile.jpg);
+            }
+        }
+        //
+        //            background-image: url(../images/team/jasper-tablet.jpg) !important;
+        //            background-image: url(../images/team/sebastian-tablet.jpg) !important;
+        //            background-image: url(../images/team/oliver-tablet.jpg) !important;                                
+
+    }
+    /*----------------- Services -------------*/
+    #services {
+        h2 {
+            color: $clottedCream;
+            font-size: 2rem;
+            padding: 0;
+            line-height: 1;
+        }
+        article {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        div {
+            width: 48%;
+            margin: 20px 0;
+            padding: 0;
+            text-align: center;
+            .services-wrapper {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+                margin-left: 5%;
+                text-align: left;
+            }
+            img {
+                max-width: 100%;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    /*----------------- Testimonials -------------*/
+    #testimonials {
+        .wrapper blockquote {
+            width: 30%;
+            height: auto;
+            display: inline-block;
+            margin: 0;
+            padding: 5px 0;
+        }
+        .wrapper blockquote p cite {
+            font-size: 0.8rem;
+        }
+        .wrapper blockquote .bubble {
+            width: 80%;
+            padding: 20px 15px;
+        }
+    }
+    /*----------------- Services -------------*/
+    #services {
+        .wrapper {
+            margin-top: 60px;
+        }
+    }
+    /*----------------- Contact -------------*/
+    #contact {
+        .wrapper {
+            margin-top: 50px;
+        }
+    }
+}
+// end of @media
+            margin: 0;
+            height: 900px;
+            img.banner {
+                position: absolute;
+                left: 0.01%;
+                width: 250px;
+            }
+            div, aside {
+                height: 300px;
+                padding: 5px 0;
+                margin: 5px 0;
+            }    
+            div {
+                width: 30%;    
+            }
+            aside {
+                width: 56%; 
+                padding-top: 60px;
+                p {
+                    width: 90%;
+                }
+            }
+        }
+
+        #the-team {
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            .wrapper {
+                margin-top: 20px;
+                .team .image-wrapper img {
+                    width: 210px;
+                    height: 150px;
+                }
+                .team:nth-child(2) .image-container img {
+                    content: url(../images/team/jasper-tablet.jpg);
+                    width: 210px;
+                    height: 150px;
+                }        
+                .team:nth-child(3) .image-container img {
+                    content: url(../images/team/sebastian-tablet.jpg);
+                    width: 210px;
+                    height: 150px;
+                }        
+                .team:nth-child(4) .image-container img {
+                    content: url(../images/team/oliver-tablet.jpg);
+                    width: 210px;
+                    height: 150px;
+                }        
+            }  
+            .team {
+                margin: 0;
+                padding: 0;
+                width: 33.33%;
+                //            height: 280px;
+
+                p {
+                    font-size: 0.9rem;
+                    padding: 5px 5%;
+                    margin: 5px auto;
+                }
+                h3 {
+                    font-size: 1.6rem;
+                    padding: 10px 0;
+                }
+            }
+            //
+            //            background-image: url(../images/team/jasper-tablet.jpg) !important;
+            //            background-image: url(../images/team/sebastian-tablet.jpg) !important;
+            //            background-image: url(../images/team/oliver-tablet.jpg) !important;                                
+        }
+
+        /*----------------- Services -------------*/
+        #services {
+            h2 {
+                color: $clottedCream;
+                font-size: 2rem;
+                padding: 0;
+                line-height: 1;
+            }
+            article {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            div {
+                width: 48%;
+                margin: 20px 0;
+                padding: 0;
+
+                text-align: center;
+                .services-wrapper {
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 5%;
+                    text-align: left;
+                }
+                img {
+                    max-width: 100%;
+                    width: 200px;
+                    height: 200px;
+
+                }
+            }
+        }
+
+        /*----------------- Testimonials -------------*/ 
+        #testimonials {
+            .wrapper blockquote {
+                width: 30%;
+                height: auto;
+                display: inline-block;
+                margin: 0;
+                padding: 5px 0;
+            }
+            .wrapper blockquote p cite {
+                font-size: 0.8rem;
+            }
+            .wrapper blockquote .bubble {
+                width: 80%;
+                padding: 20px 15px;
+            }    
+        }
+
+        /*----------------- Services -------------*/ 
+        #services {
+            .wrapper {
+                margin-top: 60px;
+
+            }
+        }
+
+        /*----------------- Contact -------------*/ 
+        #contact {
+            .wrapper {
+                margin-top: 50px;
+
+            }
+        }
+
+
+    } // end of @media
+
+
+
+
+
+
+
+

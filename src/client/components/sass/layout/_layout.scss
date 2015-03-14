@@ -1,6 +1,6 @@
 
 //-----------------sections -------------|
-section, #services, #testimonials, #brands, #contact, footer { 
+section, footer { 
     //remove all these ID's after finished
 //    height: 600px;
     float: left;
@@ -203,7 +203,7 @@ section article.wrapper {
         }
 }
 #brands {
-    top: 2000px;
+    height: 300px;
     background: $burntOrange;
     h2 {
         margin-top: -40px;
@@ -221,7 +221,7 @@ section article.wrapper {
 //    background: $gunMetal;
     h2 {
         margin-top: -40px;
-        color: $clottedCream; 
+        color: $neoBlack; 
     }
     div, aside {
         height: 400px;
