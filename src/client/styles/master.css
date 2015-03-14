@@ -870,6 +870,16 @@ section article.wrapper {
   #contact .wrapper {
     margin-top: 50px;
   }
+  #contact .twitter-feed, #contact aside {
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  iframe#twitter-widget-0 {
+    width: 100% !important;
+  }
 }
 .buttons {
   display: table;

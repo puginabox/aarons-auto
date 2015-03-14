@@ -179,6 +179,15 @@
         .wrapper {
             margin-top: 50px;
         }
+        .twitter-feed, aside {
+            width: 90%;
+            display: block;
+            text-align: center;
+            margin: 0 auto;            
+        }
+    }
+    iframe#twitter-widget-0 {
+        width: 100% !important;
     }
 }
 // end of @media
