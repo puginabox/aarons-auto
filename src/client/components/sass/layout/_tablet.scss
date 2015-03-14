@@ -6,12 +6,13 @@
         text-align: center;
         background: rgba(127,219,255, 0.6);
         color: #FFF;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 9999;
         padding: 5px 0;
         width: 100%;
+        height: 20px;
     }
     #burger-menu {
         display: none;
@@ -23,7 +24,6 @@
         display: inline-block;
         margin: 0.5rem;
         padding: 10px 0;
-
     }
     #main-menu ul li a {
         font-size: 0.9rem;
@@ -31,6 +31,7 @@
     }
     h2 {
         font-size: 1.4rem;
+        padding: 0.4rem 0;
     }
     p {
         font-size: 0.9rem;
@@ -41,6 +42,7 @@
 /*----------------- About -------------*/
     #about {
         margin: 0;
+        height: 900px;
         img.banner {
             position: absolute;
             left: 0.01%;
@@ -56,24 +58,48 @@
         }
         aside {
             width: 56%; 
+            padding-top: 60px;
             p {
                 width: 90%;
             }
         }
     }
+    
     #the-team {
-        height: 300px;
-        margin: 0px auto;
+        height: 200px;
+        margin: 0;
         padding: 0;
-        article {
-            margin-top: 200px;
-        }
-        .team {
-            margin: 20px 0;
-            padding: 0;
-            img {
-                max-width: 100%;
+        .wrapper {
+            margin-top: 20px;
+            .team .image-wrapper img {
+                width: 210px;
+                height: 150px;
             }
+            .team:nth-child(2) .image-container img {
+                content: url(../images/team/jasper-tablet.jpg);
+                width: 210px;
+                height: 150px;
+            }        
+            .team:nth-child(3) .image-container img {
+                content: url(../images/team/sebastian-tablet.jpg);
+                width: 210px;
+                height: 150px;
+            }        
+            .team:nth-child(4) .image-container img {
+                content: url(../images/team/oliver-tablet.jpg);
+                width: 210px;
+                height: 150px;
+            }        
+        }
+        
+        
+        
+        .team {
+            margin: 0;
+            padding: 0;
+            width: 33.33%;
+//            height: 280px;
+                         
             p {
                 font-size: 0.9rem;
                 padding: 5px 5%;
@@ -84,6 +110,10 @@
                 padding: 10px 0;
             }
         }
+//
+//            background-image: url(../images/team/jasper-tablet.jpg) !important;
+//            background-image: url(../images/team/sebastian-tablet.jpg) !important;
+//            background-image: url(../images/team/oliver-tablet.jpg) !important;                                
     }
 
 /*----------------- Services -------------*/
@@ -96,20 +126,23 @@
         }
         article {
             width: 100%;
-            margin: inherit 0 inherit 0;
+            margin: 0 auto;
+            text-align: center;
         }
         div {
-            width: 43%;
+            width: 48%;
             margin: 20px 0;
             padding: 0;
-            height: 350px;
-            text-align: left;
+
+            text-align: center;
             .services-wrapper {
                 width: 100%;
-                height: 250px;
+                height: auto;
                 overflow: hidden;
                 padding: 0;
                 margin: 0;
+                margin-left: 5%;
+                text-align: left;
             }
             img {
                 max-width: 100%;
@@ -119,6 +152,26 @@
             }
         }
     }
+    
+    /*----------------- Testimonials -------------*/ 
+    #testimonials {
+        .wrapper blockquote {
+            width: 30%;
+            height: auto;
+            display: inline-block;
+            margin: 0;
+            padding: 5px 0;
+        }
+        .wrapper blockquote .bubble {
+            width: 80%;
+        }    
+    }
+    
+    
+    
+    
+    
+    
 } // end of @media
 
         

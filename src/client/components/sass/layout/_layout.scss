@@ -70,7 +70,6 @@ section article.wrapper {
             max-width: 100%;
             width: 280px;
             height: 200px;
-            background: white;
         }
         p {
             font-size: 0.9rem;
@@ -145,8 +144,10 @@ section article.wrapper {
         }
     }
 }
+
+/*----------------- Testimonials -------------*/
 #testimonials {
-    top: 1500px;
+//    top: 1500px;
     background: $mustard;
     h2 {
         color: $wine;
