@@ -183,11 +183,14 @@
             width: 90%;
             display: block;
             text-align: center;
-            margin: 0 auto;            
+            margin: 0 auto 30px auto;            
         }
     }
     iframe#twitter-widget-0 {
         width: 100% !important;
+    }
+    aside#estimate {
+        margin: 20px 9%;
     }
 }
 // end of @media
