@@ -714,8 +714,8 @@ section article.wrapper {
   }
 
   h2 {
-    font-size: 1.1rem;
-    padding: 0.2rem 0;
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
     line-height: 1;
   }
 
@@ -732,26 +732,38 @@ section article.wrapper {
     margin: 0;
     height: 900px;
   }
+  #about .btn-1 {
+    display: none;
+  }
   #about img.banner {
-    position: absolute;
-    left: 0;
-    width: 200px;
+    float: left;
+    padding-left: 5px;
+    margin-top: -60px;
+    width: 150px;
   }
   #about div,
   #about aside {
-    height: 300px;
     padding: 0;
     margin: 0;
   }
   #about div {
     width: 30%;
+    display: inline-block;
+    height: 70px;
   }
   #about aside {
-    width: 56%;
-    padding-top: 60px;
+    width: 100%;
+    padding-top: 0;
+  }
+  #about aside h2 {
+    width: 50%;
+    float: right;
+    padding-bottom: 50px;
   }
   #about aside p {
+    float: left;
     width: 90%;
+    padding: 0 20px;
   }
 
   #the-team {

@@ -26,8 +26,8 @@
         display: none;
     }
     h2 {
-        font-size: 1.1rem;
-        padding: 0.2rem 0;
+        font-size: 1.3rem;
+        padding: 0.5rem 0;
         line-height: 1;
     }
     p {
@@ -40,25 +40,39 @@
     #about {
         margin: 0;
         height: 900px;
+        .btn-1 {
+            display: none;
+        }
         img.banner {
-            position: absolute;
-            left: 0;
-            width: 200px;
+//            position: absolute;
+            float: left;
+            padding-left: 5px;
+            margin-top: -60px;
+            width: 150px;
         }
         div,
         aside {
-            height: 300px;
+//            height: 300px;
             padding: 0;
             margin: 0;
         }
         div {
             width: 30%;
+            display: inline-block;
+            height: 70px;
         }
         aside {
-            width: 56%;
-            padding-top: 60px;
+            width: 100%;
+            padding-top: 0;
+            h2 {
+                width: 50%;
+                float: right;
+                padding-bottom: 50px;
+            }
             p {
+                float: left;
                 width: 90%;
+                padding: 0 20px;
             }
         }
     }
