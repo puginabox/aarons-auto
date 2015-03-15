@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Gegg Arch",
+        "pic": "gregg-arch",
+        "position": "Electrical Systems Specialist",
+        "side interests": "Hockey & Telly Tubbies",
+        "bio": "Greg has spent 15 years in the automotive repair business. Keith is an ASE Certified Master Tech, an AC Delco Certified Technician, and an HVAC Specialist. Keith is particularly knowledgeable in electrical systems and diagnosis."
+},
+    {
+        "name": "Phil Knight",
+        "pic": "phil-knight",
+        "position": "School Buses Expert",
+        "side interests": "Ice skating",
+        "bio": "Phil has spent 21 years in the automotive repair business. He is an ASE Certified Technician and also holds certifications in hybrid vehicles, advanced electrical work, and school buses."
+},
+    {
+        "name": "Jackie Simpson",
+        "pic": "jackie-",
+        "position": "Office Manager",
+        "side interests": "her band, 'Pilot and the Fluesies'",
+        "bio": "Jackie has been a service advisor for the last 4 years. She provides our customers with superb customer service. She is responsible for managing non stock parts. She loves camping and jazz."
+},
+    {
+        "name": "Mike Todd",
+        "pic": "mike-todd",
+        "position": "Body Repair & Mechanic",
+        "side interests": "Sculpture & Painting",
+        "bio": "Mike has spent 25 years in the auto repair business. He has earned an Associates Degree in Automotive Technology from Southern ME Vocational Institute, and many AC Delco and ASE certifications. He is an expert in welding, body repair, and painting."
+},
+    {
+        "name": "Dave Callen",
+        "pic": "dave-callen",
+        "position": "Owner",
+        "side interests": "The New Yorker",
+        "bio": "Dave worked at his father’s gas station thru high school and college. In 1977, he purchased the family business. He is an ASE Certified Master Tech and an expert in audio design."
+},
+    {
+        "name": "Jason Grange",
+        "pic": "jason-grange",
+        "position": "Arduino",
+        "side interests": "Senior Automotive Technician",
+        "bio": "Jason has worked ten years in the automotive repair industry. He holds a degree in automotive technology from New Hampshire Technical College. He is a GM Certified Master Technician and has extensive experience with bodywork and detailing. He enjoys the outdoors and football."
+},
+    {
+        "name": "Al Williams",
+        "pic": "al-williams",
+        "position": "Mechanic",
+        "side interests": "Xbox & Ferraris",
+        "bio": "Al has worked 32 years in the automotive repair business. Al is an expert on Hybrid vehicles."
+},
+    {
+        "name": "Scott Pritchard",
+        "pic": "scott-pritchard",
+        "position": "Shop Maintenance",
+        "side interests": "xxxxxxx",
+        "bio": "Scott’s responsibilities around the shop include maintenance of all equipment inside and out, assisting technicians, keeping the office and shop clean, running for parts and transporting customers."
+},
+
+    {
+        "name": "Chris Stevens",
+        "pic": "chris-stevens",
+        "position": "Audio engineer/Electrician",
+        "side interests": "Roller Skating",
+        "bio": "Chris has over 18 years in the automotive repair business. Chris has a Bachelor of Science Degree in Civil Engineering from New England College; he is an ASE Certified Master Tech. Chris an expert in audio systems."
+}
+]
