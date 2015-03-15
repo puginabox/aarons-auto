@@ -212,7 +212,11 @@ section article.wrapper {
     }
 }
 
-
+#map {
+    float: left;
+    width: 100%;
+    height: 300px;
+}
 
 /*----------------- Contact -------------*/
 #contact {
@@ -238,5 +242,8 @@ section article.wrapper {
         float: left;
         width: 58%;  
     }
+
 }
+
+
 

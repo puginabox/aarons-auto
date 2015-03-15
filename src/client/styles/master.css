@@ -474,6 +474,12 @@ section article.wrapper {
   color: #3f1224;
 }
 
+#map {
+  float: left;
+  width: 100%;
+  height: 300px;
+}
+
 /*----------------- Contact -------------*/
 #contact {
   height: 700px;
