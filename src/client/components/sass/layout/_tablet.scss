@@ -74,15 +74,6 @@
             .team .image-container img {
                 width: 210px;
                 height: 150px;
-            }
-            .team:nth-child(2) .image-container img {
-                content: url(../images/team/jasper-tablet.jpg);
-            }        
-            .team:nth-child(3) .image-container img {
-                content: url(../images/team/sebastian-tablet.jpg);
-            }        
-            .team:nth-child(4) .image-container img {
-                content: url(../images/team/oliver-tablet.jpg);
             }        
         }  
         .team {
@@ -100,11 +91,7 @@
                 font-size: 1.6rem;
                 padding: 10px 0;
             }
-        }
-//
-//            background-image: url(../images/team/jasper-tablet.jpg) !important;
-//            background-image: url(../images/team/sebastian-tablet.jpg) !important;
-//            background-image: url(../images/team/oliver-tablet.jpg) !important;                                
+        }                               
     }
 
 /*----------------- Services -------------*/

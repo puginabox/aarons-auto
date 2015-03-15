@@ -603,15 +603,6 @@ section article.wrapper {
     width: 210px;
     height: 150px;
   }
-  #the-team .wrapper .team:nth-child(2) .image-container img {
-    content: url(../images/team/jasper-tablet.jpg);
-  }
-  #the-team .wrapper .team:nth-child(3) .image-container img {
-    content: url(../images/team/sebastian-tablet.jpg);
-  }
-  #the-team .wrapper .team:nth-child(4) .image-container img {
-    content: url(../images/team/oliver-tablet.jpg);
-  }
   #the-team .team {
     margin: 0;
     padding: 0;
@@ -808,17 +799,8 @@ section article.wrapper {
     float: left;
   }
   #the-team .wrapper .team .image-container img {
-    width: 180px;
-    height: 129px;
-  }
-  #the-team .wrapper .team:nth-child(2) .image-container img {
-    content: url(../images/team/jasper-mobile.jpg);
-  }
-  #the-team .wrapper .team:nth-child(3) .image-container img {
-    content: url(../images/team/sebastian-mobile.jpg);
-  }
-  #the-team .wrapper .team:nth-child(4) .image-container img {
-    content: url(../images/team/oliver-mobile.jpg);
+    width: 120px;
+    height: 150px;
   }
 
   /*----------------- Services -------------*/

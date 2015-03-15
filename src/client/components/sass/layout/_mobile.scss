@@ -114,19 +114,10 @@
                     margin-left: 5px;
                     float: left;
                     img {
-                        width: 180px;
-                        height: 129px;
+                        width: 120px;
+                        height: 150px;
                     }
                 }       
-            }
-            .team:nth-child(2) .image-container img {
-                content: url(../images/team/jasper-mobile.jpg);
-            }
-            .team:nth-child(3) .image-container img {
-                content: url(../images/team/sebastian-mobile.jpg);
-            }
-            .team:nth-child(4) .image-container img {
-                content: url(../images/team/oliver-mobile.jpg);
             }
         }                             
     }
