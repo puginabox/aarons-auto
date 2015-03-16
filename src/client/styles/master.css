@@ -352,12 +352,11 @@ section article.wrapper {
 
 /*----------------- Services -------------*/
 #services {
-  background-color: #3f1224;
   padding: 4px 0;
   margin: 0;
 }
 #services h2 {
-  color: #c6d2d6;
+  color: #3f1224;
   font-size: 2rem;
   padding: 0;
   line-height: 1;
@@ -382,18 +381,16 @@ section article.wrapper {
   margin: 0;
 }
 #services div img {
-  max-width: 100%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
 }
 #services div p {
   font-size: 0.8rem;
   padding: 5px 5% 2px 0;
-  color: #c6d2d6;
+  color: #1e1914;
 }
 #services div h3 {
   font-size: 1.4rem;
-  margin: 5px 0;
+  margin: 25px 0;
 }
 #services div ul {
   list-style: circle;
@@ -474,12 +471,6 @@ section article.wrapper {
   color: #3f1224;
 }
 
-#map {
-  float: left;
-  width: 100%;
-  height: 300px;
-}
-
 /*----------------- Contact -------------*/
 #contact {
   height: 700px;
@@ -496,14 +487,28 @@ section article.wrapper {
   text-align: left;
 }
 #contact div {
-  float: right;
+  display: inline-block;
   width: 38%;
 }
 #contact aside {
-  float: left;
+  display: inline-block;
   width: 58%;
 }
 
+#map {
+  display: block;
+  width: 100%;
+  height: 300px;
+  max-width: none !important;
+  overflow: hidden;
+  transform: translateZ(0px);
+  background-color: #e5e3df;
+}
+#map img {
+  opacity: 0.6;
+}
+
+/*----------------- Footer --------------------*/
 /*----------------------- @Desktop -----------------------------*/
 /*----------------------- @Large Screens -----------------------------*/
 @media all and (min-width: 1201px) {
