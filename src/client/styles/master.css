@@ -472,19 +472,9 @@ section article.wrapper {
 }
 
 /*----------------- Contact -------------*/
-#contact {
-  height: 700px;
-}
 #contact h2 {
   margin-top: -40px;
   color: #1e1914;
-}
-#contact div, #contact aside {
-  height: 400px;
-  padding: 5px 0.5%;
-  margin: 5px 0;
-  background: pink;
-  text-align: left;
 }
 
 #twitter-feed {
@@ -492,10 +482,34 @@ section article.wrapper {
   width: 25%;
 }
 
+#hours, #first-time {
+  height: 407px;
+  margin: 0 0.1%;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
 #estimate {
   float: right;
-  margin-right: 30px;
-  width: 70%;
+  width: 75%;
+}
+
+#first-time {
+  float: right;
+  width: 37%;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+
+#hours {
+  width: 60%;
+}
+#hours h3 {
+  margin: 2rem;
+  padding: 10px 0;
+  border-top: 1px solid rgba(87, 111, 124, 0.3);
 }
 
 #twitter-widget-0 {
@@ -504,16 +518,16 @@ section article.wrapper {
   position: relative !important;
 }
 
-#contact div, #estimate {
-  margin: 0;
-  padding: 0;
-}
-
 /*----------------- Footer --------------------*/
 #main-footer {
   height: 300px;
   padding: 0;
   margin: 0;
+}
+#main-footer sup {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
 }
 
 #map {
