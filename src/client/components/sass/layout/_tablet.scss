@@ -1,19 +1,19 @@
 /*----------------------- @Tablets -----------------------------*/
 @media all and (min-width: 601px) and (max-width: 900px) {
-    body::before {
-        content: "tablet media query (breakpoint: 601px/900px)";
-        display: block;
-        text-align: center;
-        background: rgba(127,219,255, 0.6);
-        color: #FFF;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        padding: 5px 0;
-        width: 100%;
-        height: 20px;
-    }
+//    body::before {
+//        content: "tablet media query (breakpoint: 601px/900px)";
+//        display: block;
+//        text-align: center;
+//        background: rgba(127,219,255, 0.6);
+//        color: #FFF;
+//        position: fixed;
+//        top: 0;
+//        left: 0;
+//        z-index: 9999;
+//        padding: 5px 0;
+//        width: 100%;
+//        height: 20px;
+//    }
     #burger-menu {
         display: none;
     }    
@@ -66,7 +66,7 @@
     }
     
     #the-team {
-        height: 200px;
+//        height:600px;
         margin: 0;
         padding: 0;
         .wrapper {

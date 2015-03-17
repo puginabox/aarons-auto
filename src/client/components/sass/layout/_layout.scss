@@ -259,7 +259,7 @@ border: 1px solid #e8e8e8;
     }
     p {
         font-size: 0.9rem;
-        padding: 5px 5%;
+        padding: 0 5px;
         margin: 5px auto;
     }
 }
@@ -276,6 +276,9 @@ border: 1px solid #e8e8e8;
 }
 #hours {
     width: 60%;
+    span {
+        font-weight: bold;
+    }
 }
 #twitter-widget-0 {
     max-width: none !important;

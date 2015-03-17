@@ -9,80 +9,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CEO upkeep-->
     <meta name="keywords" content="xxxxx">
-    <meta name="description" content="xxxxxx">
+    <meta name="description" content="Ensure your vehicle is running safely and smoothly by bringing it to Aaron's Awesome Auto Repairs. Our auto shops are based in Virginia, and offers a wide range of quality car services.">
     <!-- CEO upkeep-->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/master.css">
-    <!--
-<script src="js/behavior.js"></script>
--->
+
     <!--[if IE]>  // making the needy IE like HTML5
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
 
 <body>
-    <header role="banner">
-        <h1>mechanix</h1>
+    <header role="banner" itemscope itemtype="http://schema.org/Organization">
+        <h1 itemprop="brand">Aaron's Auo Repairs</h1>
         <!-- hidden: for SEO purposes  -->
 
-        <nav role="navigation" id="main-menu">
+        <nav role="navigation" id="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <ul>
-                <li><a href="#about">About Us</a>
-                </li>
-                <li><a href="#services">Services</a>
-                </li>
-                <li><a href="#testimonials">Testimonials</a>
-                </li>
-                <li><a href="#brands">Brands Serviced</a>
-                </li>
-                <li><a href="#contact">Contact Us</a>
-                </li>
+                <li itemprop="about"><a href="#about">About Us</a></li>
+                <li itemprop="url"><a href="#services">Services</a></li>
+                <li itemprop="url"><a href="#testimonials">Testimonials</a></li>
+                <li itemprop="url"><a href="#brands">Brands Serviced</a></li>
+                <li itemprop="provider"><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
-        <nav role="navigation" class="mobile">
+        <nav role="navigation" class="mobile" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <header>
                 <button class="hamburger-button mobile">&#9776;</button>
                 <button class="cross-hamburger mobile">&#735;</button>
             </header>
 
             <ul class="hamburger-menu">
-                <a href="#about">
-                    <li>About Us</li>
-                </a>
-
-                <a href="#services">
-                    <li>Services</li>
-                </a>
-
-                <a href="#testimonials">
-                    <li>Testimonials</li>
-                </a>
-
-                <a href="#brands">
-                    <li>Brands Serviced</li>
-                </a>
-
-                <a href="contact">
-                    <li>Contact Us</li>
-                </a>
-
+                <a itemprop="about" href="#about"><li itemprop="about">About Us</li></a>
+                <a itemprop="url" href="#services"><li>Services</li></a>
+                <a itemprop="url" href="#testimonials"><li>Testimonials</li></a>
+                <a itemprop="url" href="#brands"><li>Brands Serviced</li></a>
+                <a itemprop="provider" href="#contact"><li>Contact Us</li></a>
             </ul>
         </nav>
     </header>
-    <section role="contentinfo" id="about">
+    <section role="contentinfo" id="about" itemscope itemtype="http://schema.org/Organization">
         <article class="wrapper">
             <h1>About Us</h1>
-            <div role="banner">
-                <img class="banner" src="images/spanner.png" title="Aaron's Awesome Auto Repairs spanner" alt="Aaron's Awesome Auto Repairs spanner">
-                <img class="banner" src="images/aaron.png" title="Aaron's Awesome Auto Repairs aaron" alt="Aaron's Awesome Auto Repairs aaron">
-                <img class="banner" src="images/engine-cog1.png" title="Aaron's Awesome Auto Repairs engine-cog1" alt="Aaron's Awesome Auto Repairs engine-cog2">
-                <img class="banner" src="images/engine-cog2.png" title="Aaron's Awesome Auto Repairs engine-cog" alt="Aaron's Awesome Auto Repairs engine-cog">
-                <img class="banner" src="images/engine-cog3.png" title="Aaron's Awesome Auto Repairs engine-cog3" alt="Aaron's Awesome Auto Repairs engine-cog3">
+            <div role="banner" itemscope itemtype="http://schema.org/Thing"> <!-- these will be animated, if time permits -->
+                <img  itemprop="image" class="banner" src="images/spanner.png" title="Aaron's Awesome Auto Repairs spanner" alt="Aaron's Awesome Auto Repairs spanner">
+                <img  itemprop="image" class="banner" src="images/aaron.png" title="Aaron's Awesome Auto Repairs aaron" alt="Aaron's Awesome Auto Repairs aaron">
+                <img  itemprop="image" class="banner" src="images/engine-cog1.png" title="Aaron's Awesome Auto Repairs engine-cog1" alt="Aaron's Awesome Auto Repairs engine-cog2">
+                <img  itemprop="image" class="banner" src="images/engine-cog2.png" title="Aaron's Awesome Auto Repairs engine-cog" alt="Aaron's Awesome Auto Repairs engine-cog">
+                <img  itemprop="image" class="banner" src="images/engine-cog3.png" title="Aaron's Awesome Auto Repairs engine-cog3" alt="Aaron's Awesome Auto Repairs engine-cog3">
             </div>
             <aside>
-                <h2>Aaron's Awesome Auto Repairs</h2>
-                <p>An vix vidisse electram. Facilisi assentior te pro, per id utinam corrumpit. Adhuc augue exerci ne qui, in sanctus electram vim. Ad suas illud pro, ad vis vide putent mediocrem. Erat appareat expetenda pri in. Vitae antiopam an pri, eum te stet quot adipiscing.</p>
+                <h2 itemprop="legalName">Aaron's Awesome Auto Repairs</h2>
+                <p itemprop="descriptions">An vix vidisse electram. Facilisi assentior te pro, per id utinam corrumpit. Adhuc augue exerci ne qui, in sanctus electram vim. Ad suas illud pro, ad vis vide putent mediocrem. Erat appareat expetenda pri in. Vitae antiopam an pri, eum te stet quot adipiscing.</p>
 
                 <nav class="buttons">
                     <div class="container">
@@ -97,76 +75,67 @@
                 </nav>
             </aside>
 
-            <section id="the-team">
+            <section id="the-team" itemscope itemtype="http://schema.org/Organization">
                 <article class="wrapper">
                     <h2>Aaron's Team</h2>
                     
                     <div class="team">
                         <img src="images/team/phil-knight.jpg" alt="Sebastian" title="Image courtesy of Thinkstock">
-                        <h3>Phil Knight</h3>
+                        <h3 itemprop="employee">Phil Knight</h3>
                         <p>Phil has spent 21 years in the automotive repair business. He is an ASE Certified Technician and also holds certifications in hybrid vehicles, advanced electrical work, and school buses.</p>
                     </div>   
                     <div class="team">
                         <img src="images/team/jackie-simpson.jpg" alt="Oliver" title="Image courtesy of Thinkstock">
-                        <h3>Jackie Simpson</h3>
-                        <p>Jackie has been a service advisor for the last 4 years. She provides our customers with superb customer service. She is responsible for managing non stock parts. She loves camping and jazz.</p>
+                        <h3 itemprop="employee">Jackie Simpson</h3>
+                        <p>Jackie has been a service advisor for the last 4 years. She provides our customers with superb customer service. She is responsible for managing non-stock parts. She loves camping and jazz.</p>
                     </div>             
                     <div class="team">
                         <img src="images/team/mike-todd.jpg" alt="Jasper" title="Image courtesy of Thinkstock">
-                        <h3>Mike Todd</h3>
+                        <h3 itemprop="employee">Mike Todd</h3>
                         <p>Mike has spent 25 years in the auto repair business. He has earned an Associates Degree in Automotive Technology from Southern ME Vocational Institute, and many AC Delco and ASE certifications. He is an expert in welding, body repair, and painting.</p>
                     </div>
                     <div class="team">
                         <img src="images/team/dave-callen.jpg" alt="Sebastian" title="Image courtesy of Thinkstock">
-                        <h3>Aaron Callen</h3>
+                        <h3 itemprop="founder">Aaron Callen</h3>
                         <p>Aaron worked at his father’s gas station thru high school and college. In 1998, he purchased the family business. He is an ASE Certified Master Tech and an expert in audio design.</p>
                     </div>
                     <div class="team">
                         <img src="images/team/jason-grange.jpg" alt="Oliver" title="Image courtesy of Thinkstock">
-                        <h3>Jason Grange</h3>
+                        <h3 itemprop="employee">Jason Grange</h3>
                         <p>Jason has worked ten years in the automotive repair industry. He holds a degree in automotive technology from New Hampshire Technical College. He is a GM Certified Master Technician and has extensive experience with bodywork and detailing. He enjoys the outdoors and football.</p>
                     </div> 
                     <div class="team">
                         <img src="images/team/gregg-arch.jpg" alt="Gegg Arch" title="Image courtesy of Thinkstock">
-                        <h3>Gegg Arch</h3>
+                        <h3 itemprop="employee">Gegg Arch</h3>
                         <p>Greg has spent 15 years in the automotive repair business. Keith is an ASE Certified Master Tech, an AC Delco Certified Technician, and an HVAC Specialist. Keith is particularly knowledgeable in electrical systems and diagnosis.</p>
-                    </div>
-                    
-                    
-                    
-                    
-                    
+                    </div> 
                     <div class="team">
                         <img src="images/team/al-williams.jpg" alt="Al Williams" title="Image courtesy of Thinkstock">
-                        <h3>Al Williams</h3>
+                        <h3 itemprop="employee">Al Williams</h3>
                         <p>Al has worked 32 years in the automotive repair business. Al is an expert on Hybrid vehicles.</p>
                     </div>
                     <div class="team">
                         <img src="images/team/scott-pritchard.jpg" alt="Scott Pritchard" title="Image courtesy of Thinkstock">
-                        <h3>Scott Pritchard</h3>
+                        <h3 itemprop="employee">Scott Pritchard</h3>
                         <p>Scott’s responsibilities around the shop include maintenance of all equipment inside and out, assisting technicians, keeping the office and shop clean, running for parts and transporting customers.</p>
                     </div>
                     <div class="team">
                         <img src="images/team/chris-stevens.jpg" alt="Chris Stevens" title="Image courtesy of Thinkstock">
-                        <h3>Chris Stevens</h3>
+                        <h3 itemprop="employee">Chris Stevens</h3>
                         <p>Chris has over 18 years in the automotive repair business. Chris has a Bachelor of Science Degree in Civil Engineering from New England College; he is an ASE Certified Master Tech. Chris an expert in audio systems.</p>
                     </div>                
-                    
-                    
-                    
-                    
                 </article>
             </section>
 
         </article>
     </section>
-    <section id="services">
+    <section id="services" itemscope itemtype="http://schema.org/Service">
         <article class="wrapper">
             <h2>Services</h2>
-            <div>
-                <img src="images/services/repairs.png">
-                <h3>General Repairs</h3>
-                <div class="services-wrapper">
+            <div itemprop="produces">
+                <img src="images/services/repairs.png" itemprop="image" alt="repairs">
+                <h3 itemprop="name">General Repairs</h3>
+                <div class="services-wrapper" itemprop="description">
                     <p>We provide an ultra-fast turn over for regular maintenance:</p>
                     <ul class="services-list">
                         <li>Oil Changes</li>
@@ -176,10 +145,10 @@
                     </ul>
                 </div>
             </div>
-            <div>
-                <img src="images/services/ceritifican.png">
-                <h3>Certifications</h3>
-                <div class="services-wrapper">
+            <div itemprop="produces">
+                <img src="images/services/ceritifican.png" itemprop="image" alt="ceritifican">
+                <h3 itemprop="name">Certifications</h3>
+                <div class="services-wrapper" itemprop="description">
                     <p>Wear & tear replacing is going to be expensive! Check with us first :-)</p>
                     <ul class="services-list">
                         <li>VA Safety Inspections</li>
@@ -189,10 +158,10 @@
                     </ul>
                 </div>
             </div>
-            <div>
-                <img src="images/services/electrical.png">
-                <h3>Electrical & Engine </h3>
-                <div class="services-wrapper">
+            <div itemprop="produces">
+                <img src="images/services/electrical.png" itemprop="image" alt="electrical">
+                <h3 itemprop="name">Electrical & Engine </h3>
+                <div class="services-wrapper" itemprop="description">
                     <p>Our crew are all Certified Electricians using state-of-the-art diagnostic tools:</p>
                     <ul class="services-list">
                         <li>Cooling System</li>
@@ -201,10 +170,10 @@
                         <li>Exhaust</li>
                 </div>
             </div>
-            <div>
-                <img src="images/services/audio.png">
-                <h3>Car Audio Installations</h3>
-                <div class="services-wrapper">
+            <div itemprop="produces">
+                <img src="images/services/audio.png" itemprop="image" alt="audio">
+                <h3 itemprop="name">Car Audio Installations</h3>
+                <div class="services-wrapper" itemprop="description">
                     <p>We can custom install just about anything you can think of! We specialize in the following:
                     </p>
                     <ul class="services-list">
@@ -217,10 +186,10 @@
             </div>
         </article>
     </section>
-    <section id="testimonials">
+        <section id="testimonials" itemscope itemtype="http://schema.org/Review">
         <article class="wrapper">
             <h2>Testimonials</h2>
-            <div class="testingAgain"></div>
+            <div class="reviews"></div>
 
 
         </article>
@@ -235,7 +204,7 @@
         </article>
     </section>
 
-    <section id="contact">
+        <section id="contact" itemscope itemtype="http://schema.org/ContactPage">
         <article class="wrapper">
             <h2>Contact Us</h2>
             <div id="twitter-feed">
@@ -243,26 +212,21 @@
             </div>
 
             <aside id="estimate">
-                <div id="hours">
-                    <h3>Our Herndon Shop Hours</h3>
-                    <ul>
-                        <li>Monday to friday: 9am to 5pm</li>
-                        <li>Closed weekends</li>
-                        <li></li>
-                    </ul>
-                    <p>2333 Dulles Station Blvd, Herndon 20171 VA</p>
-                    <h3>Our Arlington Shop Hours</h3>
-                    <ul>
-                        <li>Monday to friday: 9am to 5pm</li>
-                        <li>Closed weekends</li>
-                    </ul>
-
-                    <h3>The McLean Main Office Hours</h3>
-                    <ul>
-                        <li>Monday to friday: 9am to 5pm</li>
-                        <li>Closed weekends</li>
-                    </ul>
-                    <p>2333 Dulles Station Blvd, Herndon 20171 VA</p>
+                <div id="hours" itemscope itemtype="http://schema.org/Place">>
+                    <h3 itemprop="description">Our Herndon Shop Hours</h3>
+                    <p><time itemprop="openingHours" datetime="Mo,Fr 9:00-17:00">Monday to friday: 9am to 5pm</time>.</p>
+                    <p itemprop="address">2333 Dulles Station Blvd, Herndon 20171 VA.
+                    <span itemprop="telephone"> Ph: 555-555-5555</span>/ <span itemprop="faxNumber"> Fax: 555-555-5555</span></p>
+                    
+                    <h3 itemprop="description"Our Arlington Shop Hours</h3>
+                    <p><time itemprop="openingHours" datetime="Mo,Fr 9:00-17:00">Monday to friday: 9am to 5pm</time>.</p>
+                    <p itemprop="address">2333 Dulles Station Blvd, Herndon 20171 VA.
+                    <span itemprop="telephone"> Ph: 555-555-5555</span>/ <span itemprop="faxNumber"> Fax: 555-555-5555</span></p>
+                    
+                    <h3 itemprop="description"The McLean Main Office Hours</h3>
+                    <p><time itemprop="openingHours" datetime="Mo,Fr 9:00-17:00">Monday to friday: 9am to 5pm</time>.</p>
+                    <p itemprop="address">2333 Dulles Station Blvd, Herndon 20171 VA.
+                    <span itemprop="telephone"> Ph: 555-555-5555</span>/ <span itemprop="faxNumber"> Fax: 555-555-5555</span></p>
                 </div>
                 <div id="first-time">
                     <h3>First time at Aarons?</h3>
@@ -283,9 +247,9 @@
 
     </section>
 
-    <footer id="main-footer">
-        <nav id="map"></nav>
-        <sup>&copy; Aaron's Awesome Auto Repairs, 2015</sup>
+        <footer id="main-footer"  itemscope itemtype="http://schema.org/Organization">
+            <nav id="map" itemprop="location"></nav>
+        <sup  itemprop="legalName">&copy; Aaron's Awesome Auto Repairs, 2015</sup>
     </footer>
 
     <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
