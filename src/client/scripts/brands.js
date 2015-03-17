@@ -1,6 +1,6 @@
 
 
-$.getJSON('/scripts/brands.json', function (data) {
+$.getJSON('scripts/brands.json', function (data) {
     var output = '<div class="brands-covered">';
     $.each(data, function (key, val) {
         output += '<p>';
