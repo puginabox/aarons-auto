@@ -515,7 +515,8 @@ section article.wrapper {
 }
 #first-time P {
   text-align: left;
-  padding-left: 1rem;
+  padding: 10px 0;
+  margin-left: 10%;
 }
 
 #hours {
@@ -526,6 +527,35 @@ section article.wrapper {
   max-width: none !important;
   width: 100% !important;
   position: relative !important;
+}
+
+form {
+  margin: 5px auto;
+  margin-left: 10%;
+  text-align: center;
+}
+
+input {
+  border-radius: 3px;
+  background-color: #fff;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.9rem;
+  margin: 1rem;
+  padding: 0.2rem;
+  width: 80%;
+}
+
+.button {
+  cursor: pointer;
+  background: rgba(87, 111, 124, 0);
+}
+.button:hover {
+  background: rgba(87, 111, 124, 0.6);
 }
 
 /*----------------- Footer --------------------*/

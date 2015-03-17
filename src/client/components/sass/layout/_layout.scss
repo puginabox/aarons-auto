@@ -255,7 +255,8 @@ border: 1px solid #e8e8e8;
     margin: 0 10px 0 0; 
     P {
         text-align: left;
-        padding-left: 1rem;
+        padding: 10px 0;
+        margin-left: 10%;
     }
 }
 #hours {
@@ -265,6 +266,32 @@ border: 1px solid #e8e8e8;
     max-width: none !important;
     width: 100% !important;
     position: relative !important;
+}
+form {
+    margin: 5px auto;
+    margin-left: 10%;
+    text-align: center;
+}
+input {
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-size: 0.9rem;
+    margin: 1rem;
+    padding: 0.2rem;
+    width: 80%;
+}
+.button {
+    cursor: pointer;
+    background: rgba($gunMetal, 0);
+    &:hover {
+        background: rgba($gunMetal, 0.6);
+    }
 }
 /*----------------- Footer --------------------*/
 

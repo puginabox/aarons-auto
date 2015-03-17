@@ -96,9 +96,9 @@
 
                 </nav>
             </aside>
-            
-            
-            
+
+
+
             <section id="the-team">
                 <article class="wrapper">
                     <h2>Aaron's Team</h2>
@@ -107,9 +107,9 @@
                     </div>
                 </article>
             </section>
-            
-            
-            
+
+
+
         </article>
     </section>
     <section id="services">
@@ -218,7 +218,7 @@
     </section>
     <section id="brands">
         <article class="wrapper">
-            <h2>Brands Serviced</h2>        
+            <h2>Brands Serviced</h2> 
         </article>
     </section>
     <section id="contact">
@@ -251,20 +251,26 @@
                     <p>2333 Dulles Station Blvd, Herndon 20171 VA</p>
                 </div>
                 <div id="first-time">
-                <h3>First time at Aarons?</h3>
-                <p>Special online offer for our first time customers! Schedule an appointment today and take advantage of this offer while it lasts!</p>
-                    <form>
+                    <h3>First time at Aarons?</h3>
+                    <p>Special online offer for our first time customers! Schedule an appointment today!</p>
+                    <form class="contact-form" id="contact-form" method="post" data-abide="" novalidate="novalidate">
+                        <!-- contact form -->
+                            <input type="text" name="name" placeholder="your name?" required="" pattern="[a-zA-Z]+" data-invalid="">
+                            <input type="text" name="name" placeholder="When would you like to schedule?" required="" pattern="[a-zA-Z]+">
+                            <input type="text" name="email" placeholder="we@fix-cars.com" required="">
+                            <input type="text" name="subject" placeholder="Subject" required="">
+                            <input type="submit" class="button right" value="Send">
                     </form>
                 </div>
-                    </aside>
+            </aside>
 
-        
+
         </article>
-       
+
     </section>
 
     <footer id="main-footer">
-        <nav id="map"></nav> 
+        <nav id="map"></nav>
         <sup>&copy; Aaron's Awesome Auto Repairs, 2015</sup>
     </footer>
 
@@ -275,11 +281,11 @@
     <script type="text/javascript" src="scripts/burger.js"></script>
     <script type="text/javascript" src="scripts/twitter-feed.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/form.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 
-<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 
-
-<script type="text/javascript" src="scripts/locations.js"></script>
+    <script type="text/javascript" src="scripts/locations.js"></script>
 
 </body>
 
