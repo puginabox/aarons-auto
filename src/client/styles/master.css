@@ -467,6 +467,7 @@ section article.wrapper {
 #brands ul {
   display: block;
   height: 200px;
+  width: 100%;
   background: green;
   list-style: none;
 }
