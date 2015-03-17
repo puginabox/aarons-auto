@@ -10,7 +10,6 @@
     <!-- CEO upkeep-->
     <meta name="keywords" content="auto shop, car services, herndon, mclean, virginia, va, engine repairs, certified technicians, mechanics">
     <meta name="description" content="Ensure your vehicle is running safely and smoothly by bringing it to Aaron's Awesome Auto Repairs. Our auto shops are based in Virginia, and offers a wide range of quality car services.">
-    <!-- CEO upkeep-->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/master.css">
 
@@ -195,10 +194,10 @@
         </article>
     </section>
 
-    <section id="brands">
+        <section id="brands" itemscope itemtype="http://schema.org/Product">
         <article class="wrapper">
             <h2>Brands Serviced</h2> 
-            <div class="testen">
+            <div class="edmunds-brands">
 
             </div>
         </article>
@@ -251,7 +250,7 @@
             <nav id="map" itemprop="location"></nav>
         <sup  itemprop="legalName">&copy; Aaron's Awesome Auto Repairs, 2015</sup>
     </footer>
-
+        <!-- These would be minified/concatinated in a production build, before deployment -->
     <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
@@ -260,11 +259,9 @@
     <script type="text/javascript" src="scripts/twitter-feed.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/form.js"></script>
-    <script type="text/javascript" src="scripts/json-feeds.js"></script>
+    <script type="text/javascript" src="scripts/brands.js"></script>
         <script type="text/javascript" src="scripts/testimonials.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-
-
     <script type="text/javascript" src="scripts/locations.js"></script>
 
 </body>
