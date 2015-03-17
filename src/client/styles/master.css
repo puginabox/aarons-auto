@@ -275,6 +275,7 @@ section, footer {
   display: block;
   margin: 0 auto;
   padding: 20px 0;
+  clear: both;
 }
 
 section article.wrapper {
@@ -283,7 +284,8 @@ section article.wrapper {
 
 /*----------------- About -------------*/
 #about {
-  height: 1100px;
+  height: auto;
+  overflow: hidden;
   margin: 80px auto;
 }
 #about h1 {
@@ -297,7 +299,7 @@ section article.wrapper {
   max-width: 400px;
 }
 #about div, #about aside {
-  height: 300px;
+  height: 400px;
   padding: 5px 0;
   margin: 5px 0;
   text-align: left;
@@ -315,7 +317,7 @@ section article.wrapper {
 }
 
 #the-team {
-  height: 300px;
+  height: 9x00px;
   width: 100%;
   float: left;
   display: block;
@@ -324,15 +326,12 @@ section article.wrapper {
   text-align: center;
   z-index: 9999999;
 }
-#the-team article {
-  margin-top: 200px;
-}
 #the-team .team {
   display: inline-block;
   width: 33.3333%;
   margin: 20px 0;
   padding: 0;
-  height: auto;
+  height: 400px;
   text-align: center;
 }
 #the-team .team img {

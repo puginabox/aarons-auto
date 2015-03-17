@@ -8,6 +8,7 @@ section, footer {
     display: block;
     margin: 0 auto;
     padding: 20px 0;
+    clear: both;
 }
 // to compensate for scrollto and opacity effect
 section article.wrapper {
@@ -16,7 +17,8 @@ section article.wrapper {
 
 /*----------------- About -------------*/
 #about {
-    height: 1100px;
+    height: auto;
+    overflow: hidden;
     margin: 80px auto;
     h1 {
         display: none; /* hidden for SEO */
@@ -28,7 +30,7 @@ section article.wrapper {
         max-width: 400px;
     }
     div, aside {
-        height: 300px;
+        height: 400px;
         padding: 5px 0;
         margin: 5px 0;
 //        background: pink;
@@ -48,7 +50,7 @@ section article.wrapper {
     }
 }
 #the-team {
-    height: 300px;
+    height: 9x00px;
     width: 100%;
     float: left;
     display: block;
@@ -56,15 +58,15 @@ section article.wrapper {
     padding: 0;
     text-align: center;
     z-index: 9999999;
-    article {
-        margin-top: 200px;
-    }
+//    article {
+//        margin-top: 200px;
+//    }
     .team {
         display: inline-block;
         width: 33.3333%;
         margin: 20px 0;
         padding: 0;
-        height: auto;
+        height: 400px;
         text-align: center;
         img {
             max-width: 100%;
