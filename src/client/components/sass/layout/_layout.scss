@@ -236,21 +236,30 @@ border: 1px solid #e8e8e8;
 #estimate {
     float: right;
     width: 75%;
+    h3 {        
+        font-size: 1.3rem;
+        margin: 1.2rem 0;
+        padding: 5px 0;
+        border-top: 1px solid rgba($gunMetal, 0.3);
+    }
+    p {
+        font-size: 0.9rem;
+        padding: 5px 5%;
+        margin: 5px auto;
+    }
 }
 #first-time {
     float: right;
     width: 37%;
     padding: 0;
-    margin: 0 10px 0 0;       
+    margin: 0 10px 0 0; 
+    P {
+        text-align: left;
+        padding-left: 1rem;
+    }
 }
 #hours {
-
     width: 60%;
-    h3 {
-        margin: 2rem;
-        padding: 10px 0;
-        border-top: 1px solid rgba($gunMetal, 0.3);
-    }
 }
 #twitter-widget-0 {
     max-width: none !important;

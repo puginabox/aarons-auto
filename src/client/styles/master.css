@@ -495,6 +495,17 @@ section article.wrapper {
   float: right;
   width: 75%;
 }
+#estimate h3 {
+  font-size: 1.3rem;
+  margin: 1.2rem 0;
+  padding: 5px 0;
+  border-top: 1px solid rgba(87, 111, 124, 0.3);
+}
+#estimate p {
+  font-size: 0.9rem;
+  padding: 5px 5%;
+  margin: 5px auto;
+}
 
 #first-time {
   float: right;
@@ -502,14 +513,13 @@ section article.wrapper {
   padding: 0;
   margin: 0 10px 0 0;
 }
+#first-time P {
+  text-align: left;
+  padding-left: 1rem;
+}
 
 #hours {
   width: 60%;
-}
-#hours h3 {
-  margin: 2rem;
-  padding: 10px 0;
-  border-top: 1px solid rgba(87, 111, 124, 0.3);
 }
 
 #twitter-widget-0 {
