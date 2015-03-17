@@ -1,4 +1,4 @@
-$.getJSON('/scripts/testimonials.json', function (data) {
+$.getJSON('scripts/testimonials.json', function (data) {
     var output = '<div>';
     $.each(data, function (key, val) {
         output += '<blockquote>';
