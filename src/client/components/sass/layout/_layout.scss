@@ -202,7 +202,18 @@ section article.wrapper {
 }
 #brands {
     height: 300px;
-    background: $burntOrange;
+    ul {
+        display: block;
+        height: 200px;
+        background: green;
+            list-style: none;
+        li {
+            display: inline-block;
+            width: 10%;
+            height: 100%;
+            background: orange;
+        }
+    }
     h2 {
         margin-top: -40px;
         font-size: 2.4rem;
@@ -303,6 +314,13 @@ input {
         display: block;
         width: 100%;
         margin: 20px 0;
+        font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 1.3rem;
+        margin: 1.2rem 0;
+        padding: 5px 0;
+        border-top: 1px solid rgba(87, 111, 124, 0.3);
     }
 }
 #map {
