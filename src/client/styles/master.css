@@ -486,18 +486,34 @@ section article.wrapper {
   background: pink;
   text-align: left;
 }
-#contact div {
+
+#twitter-feed {
   display: inline-block;
-  width: 38%;
+  width: 25%;
 }
-#contact aside {
-  display: inline-block;
-  width: 58%;
+
+#estimate {
+  float: right;
+  margin-right: 30px;
+  width: 70%;
+}
+
+#twitter-widget-0 {
+  max-width: none !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+#contact div, #estimate {
+  margin: 0;
+  padding: 0;
 }
 
 /*----------------- Footer --------------------*/
 #main-footer {
   height: 300px;
+  padding: 0;
+  margin: 0;
 }
 
 #map {
@@ -505,11 +521,10 @@ section article.wrapper {
   position: relative;
   width: 100%;
   height: 190px;
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: none !important;
   overflow: hidden;
   transform: translateZ(0px);
-  background-color: #e5e3df;
 }
 #map img {
   opacity: 0.6;
