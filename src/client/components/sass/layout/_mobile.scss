@@ -25,13 +25,11 @@
     #main-menu {
         display: none;
     }
-    h2 {
-        font-size: 1.3rem;
-        padding: 0.5rem 0;
-        line-height: 1;
-    }
     p {
         font-size: 0.9rem;
+    }
+    section {
+        padding: 0;
     }
     section article.wrapper {
         margin-top: 0;
@@ -43,6 +41,11 @@
         overflow: visible;
         .btn-1 {
             display: none;
+        }
+        h2 {
+            font-size: 1.3rem;
+            padding: 0.5rem 0;
+            line-height: 1;
         }
         img.banner {
                 position: static;
@@ -144,40 +147,80 @@
     #services {
         margin: 0 auto 20px auto;        
         padding: 0;
-        h2 {
-            color: $clottedCream;
-            font-size: 2rem;
-            padding: 0;
-            line-height: 1;
+        .wrapper {
+            h2 {
+                font-size: 2.2rem;
+                padding: 0.5rem 0;
+                line-height: 1;
+            }
+            div h3 {
+                font-weight: 400;
+                padding: 0;
+                margin: 0 auto;
+            }
+            div {
+                height: auto;
+            }
+            div span {
+                display: block;    
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                height: 150px;                
+            }
+            article {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            div, div p {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            div p {
+                font-size: 1.2rem;
+            }
         }
-        article {
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
         .services-wrapper {
             width: 100%;
-            height: auto;
+//            height: auto;
             overflow: hidden;
             padding: 0;
             margin: 0;
             margin-left: 5%;
             text-align: left;
         }
-        div {
-            width: 100%;
-            height: auto;
-            margin: 10px auto;
-            padding: 0;
-            text-align: center;
-            img {
-                max-width: 100%;
-                width: 200px;
-                height: 200px;
-            }
+        .repairs {
+            background: url(../images/services/repairs-mobile.png) top center / 130px 100px no-repeat;
+        }
+        .certification {
+            background: url(../images/services/certification-mobile.png) top center / 130px 100px no-repeat;
+        }
+        .electrical {
+            background: url(../images/services/electrical-mobile.png) top center / 130px 100px no-repeat;
+        }
+        .audio {
+            background: url(../images/services/audio-mobile.png) top center / 130px 100px no-repeat;
         }
     }
+    #services div ul {
+        list-style: none;
+        width: 80%;
+        padding: 5px 20px;
+        margin: 0 auto;
+        text-align: center;        
+        li {
+            padding: 5px;
+            margin: 5px auto;
+            font-size: 1rem;
+            background: $wine; 
+            color: $clottedCream; 
+        }
+    }
+        
+        
+        
     /*----------------- Testimonials -------------*/
     #testimonials {
         .wrapper blockquote {

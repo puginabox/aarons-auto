@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -388,16 +389,16 @@ section article.wrapper {
   margin: 0;
 }
 #services div .repairs {
-  background: url(../images/repairs-mobile.png) top left/120px 150px no-repeat;
+  background: url(../images/services/repairs.png) top left/234px 260px no-repeat;
 }
 #services div .certification {
-  background: url(../images/certification-mobile.png) top left/120px 150px no-repeat;
+  background: url(../images/services/certification.png) top left/234px 260px no-repeat;
 }
 #services div .electrical {
-  background: url(../images/electrical-mobile.png) top left/120px 150px no-repeat;
+  background: url(../images/services/electrical.png) top left/234px 260px no-repeat;
 }
 #services div .audio {
-  background: url(../images/audio-mobile.png) top left/120px 150px no-repeat;
+  background: url(../images/services/audio.png) top left/234px 260px no-repeat;
 }
 #services div p {
   font-size: 0.8rem;
@@ -799,14 +800,12 @@ input {
     display: none;
   }
 
-  h2 {
-    font-size: 1.3rem;
-    padding: 0.5rem 0;
-    line-height: 1;
-  }
-
   p {
     font-size: 0.9rem;
+  }
+
+  section {
+    padding: 0;
   }
 
   section article.wrapper {
@@ -821,6 +820,11 @@ input {
   }
   #about .btn-1 {
     display: none;
+  }
+  #about h2 {
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    line-height: 1;
   }
   #about img.banner {
     position: static;
@@ -930,37 +934,73 @@ input {
     margin: 0 auto 20px auto;
     padding: 0;
   }
-  #services h2 {
-    color: #c6d2d6;
-    font-size: 2rem;
-    padding: 0;
+  #services .wrapper h2 {
+    font-size: 2.2rem;
+    padding: 0.5rem 0;
     line-height: 1;
   }
-  #services article {
+  #services .wrapper div h3 {
+    font-weight: 400;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #services .wrapper div {
+    height: auto;
+  }
+  #services .wrapper div span {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 150px;
+  }
+  #services .wrapper article {
     width: 100%;
     margin: 0 auto;
     text-align: center;
   }
+  #services .wrapper div, #services .wrapper div p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #services .wrapper div p {
+    font-size: 1.2rem;
+  }
   #services .services-wrapper {
     width: 100%;
-    height: auto;
     overflow: hidden;
     padding: 0;
     margin: 0;
     margin-left: 5%;
     text-align: left;
   }
-  #services div {
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
-    padding: 0;
+  #services .repairs {
+    background: url(../images/services/repairs-mobile.png) top center/130px 100px no-repeat;
+  }
+  #services .certification {
+    background: url(../images/services/certification-mobile.png) top center/130px 100px no-repeat;
+  }
+  #services .electrical {
+    background: url(../images/services/electrical-mobile.png) top center/130px 100px no-repeat;
+  }
+  #services .audio {
+    background: url(../images/services/audio-mobile.png) top center/130px 100px no-repeat;
+  }
+
+  #services div ul {
+    list-style: none;
+    width: 80%;
+    padding: 5px 20px;
+    margin: 0 auto;
     text-align: center;
   }
-  #services div img {
-    max-width: 100%;
-    width: 200px;
-    height: 200px;
+  #services div ul li {
+    padding: 5px;
+    margin: 5px auto;
+    font-size: 1rem;
+    background: #3f1224;
+    color: #c6d2d6;
   }
 
   /*----------------- Testimonials -------------*/
