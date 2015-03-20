@@ -68,6 +68,9 @@ section article.wrapper {
         padding: 0;
         height: 400px;
         text-align: center;
+        span {
+            visibility: hidden;
+        }
         img {
             max-width: 100%;
             width: 280px;
@@ -115,12 +118,19 @@ section article.wrapper {
             padding: 0;
             margin: 0;
         }
-        img {
-//            max-width: 100%;
-            width: 150px;
-//            height: 200px;
-            
+        .repairs {
+            background: url(../images/repairs-mobile.png) top left / 120px 150px no-repeat;
         }
+        .certification {
+            background: url(../images/certification-mobile.png) top left / 120px 150px no-repeat;
+        }
+        .electrical {
+            background: url(../images/electrical-mobile.png) top left / 120px 150px no-repeat;
+        }
+        .audio {
+            background: url(../images/audio-mobile.png) top left / 120px 150px no-repeat;
+        }
+
         p {
             font-size: 0.8rem;
             padding: 5px 5% 2px 0;

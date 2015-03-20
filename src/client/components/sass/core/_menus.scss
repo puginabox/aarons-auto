@@ -43,3 +43,4 @@
     background: rgba($wine, 1);
     z-index: 9999;
 }
+nav[role="navigation"] a:empty { display: none; pointer-events: none; }

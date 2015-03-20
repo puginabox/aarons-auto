@@ -173,6 +173,11 @@ footer {
   z-index: 9999;
 }
 
+nav[role="navigation"] a:empty {
+  display: none;
+  pointer-events: none;
+}
+
 .mobile header {
   width: 100%;
   background: #3f1224;
@@ -334,6 +339,9 @@ section article.wrapper {
   height: 400px;
   text-align: center;
 }
+#the-team .team span {
+  visibility: hidden;
+}
 #the-team .team img {
   max-width: 100%;
   width: 280px;
@@ -379,8 +387,17 @@ section article.wrapper {
   padding: 0;
   margin: 0;
 }
-#services div img {
-  width: 150px;
+#services div .repairs {
+  background: url(../images/repairs-mobile.png) top left/120px 150px no-repeat;
+}
+#services div .certification {
+  background: url(../images/certification-mobile.png) top left/120px 150px no-repeat;
+}
+#services div .electrical {
+  background: url(../images/electrical-mobile.png) top left/120px 150px no-repeat;
+}
+#services div .audio {
+  background: url(../images/audio-mobile.png) top left/120px 150px no-repeat;
 }
 #services div p {
   font-size: 0.8rem;
@@ -771,20 +788,6 @@ input {
 }
 /*----------------------- @Mobile -----------------------------*/
 @media all and (min-width: 0px) and (max-width: 600px) {
-  body::before {
-    content: "mobile media query (breakpoint: 0/600px)";
-    display: block;
-    text-align: center;
-    background: rgba(0, 178, 255, 0.6);
-    color: #FFF;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 5px 0;
-    z-index: 9999999;
-  }
-
   .mobile {
     display: block;
     position: fixed;
@@ -803,7 +806,7 @@ input {
   }
 
   p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   section article.wrapper {
@@ -813,12 +816,14 @@ input {
   /*----------------- About -------------*/
   #about {
     margin: 0;
-    height: 900px;
+    height: auto;
+    overflow: visible;
   }
   #about .btn-1 {
     display: none;
   }
   #about img.banner {
+    position: static;
     float: left;
     padding-left: 5px;
     margin-top: -60px;
@@ -850,7 +855,7 @@ input {
   }
 
   #the-team {
-    height: 900px;
+    height: auto;
     margin: 0;
     padding: 0;
   }
@@ -859,8 +864,8 @@ input {
   }
   #the-team .wrapper .team {
     width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
+    height: auto;
+    margin: 0 10px 20px 10px;
     padding-bottom: 10px;
     padding: 0;
     text-align: left;
@@ -870,34 +875,60 @@ input {
     padding-bottom: 20px;
   }
   #the-team .wrapper .team p {
-    width: 100%;
-    font-size: 0.9rem;
-    float: left;
-    padding: 5px;
+    width: 61%;
+    float: right;
+    padding: 0 15px 0 10px;
     margin: 0;
     margin-left: 5px;
   }
   #the-team .wrapper .team h3 {
-    width: 46%;
+    width: 61%;
     float: right;
     height: auto;
     font-size: 1.6rem;
-    padding: 20px 0 10px 0;
+    padding: 0 0 5px 0;
   }
-  #the-team .wrapper .team .image-container {
-    width: auto;
-    padding: 0 3px 3px 5px;
-    margin-left: 5px;
-    float: left;
+
+  #jackie-simpson {
+    background: url(../images/team/jackie-simpson-mobile.jpg) top left/120px 150px no-repeat;
   }
-  #the-team .wrapper .team .image-container img {
-    width: 120px;
-    height: 150px;
+
+  #phil-knight {
+    background: url(../images/team/phil-knight-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #mike-todd {
+    background: url(../images/team/mike-todd-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #aaron-callen {
+    background: url(../images/team/aaron-callen-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #jason-grange {
+    background: url(../images/team/jason-grange-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #gregg-arch {
+    background: url(../images/team/gregg-arch-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #al-williams {
+    background: url(../images/team/al-williams-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #scott-pritchard {
+    background: url(../images/team/scott-pritchard-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #chris-stevens {
+    background: url(../images/team/chris-stevens-mobile.jpg) top left/120px 150px no-repeat;
   }
 
   /*----------------- Services -------------*/
   #services {
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
+    padding: 0;
   }
   #services h2 {
     color: #c6d2d6;
@@ -920,8 +951,9 @@ input {
     text-align: left;
   }
   #services div {
-    width: 48%;
-    margin: 20px 0;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
     padding: 0;
     text-align: center;
   }
@@ -940,16 +972,11 @@ input {
     padding: 5px 0;
   }
   #testimonials .wrapper blockquote p cite {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #testimonials .wrapper blockquote .bubble {
     width: 80%;
     padding: 20px 15px;
-  }
-
-  /*----------------- Services -------------*/
-  #services .wrapper {
-    margin-top: 60px;
   }
 
   /*----------------- Contact -------------*/
