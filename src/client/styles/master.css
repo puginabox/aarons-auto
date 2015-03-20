@@ -941,7 +941,7 @@ input {
   }
   #services .wrapper div h3 {
     font-weight: 400;
-    padding: 0;
+    padding: 5px auto;
     margin: 0 auto;
   }
   #services .wrapper div {
@@ -952,7 +952,7 @@ input {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    height: 150px;
+    height: 100px;
   }
   #services .wrapper article {
     width: 100%;
@@ -1019,6 +1019,18 @@ input {
     padding: 20px 15px;
   }
 
+  #brands {
+    height: auto;
+  }
+  #brands .wrapper .edmunds-brands .brands-covered p {
+    width: 80%;
+    padding: 5px;
+    margin: 5px auto;
+    font-size: 1rem;
+    background: #3f1224;
+    color: #c6d2d6;
+  }
+
   /*----------------- Contact -------------*/
   #contact .wrapper {
     margin-top: 50px;
@@ -1030,12 +1042,28 @@ input {
     margin: 0 auto 30px auto;
   }
 
+  #hours, #first-time {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #first-time {
+    margin: 5px auto;
+  }
+
+  #twitter-feed {
+    width: 90%;
+    text-align: center;
+  }
+
   iframe#twitter-widget-0 {
     width: 100% !important;
   }
 
   aside#estimate {
-    margin: 20px 9%;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .buttons {
