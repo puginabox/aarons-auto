@@ -182,12 +182,15 @@ nav[role="navigation"] a:empty {
 .mobile header {
   width: 100%;
   background: #3f1224;
+  background: none;
   height: 50px;
+  width: 50px;
   line-height: 50px;
   position: fixed;
   text-align: right;
   right: 0;
   top: 0;
+  z-index: 9999999;
 }
 
 .hamburger-button {
@@ -198,13 +201,13 @@ nav[role="navigation"] a:empty {
   width: 50px;
   line-height: 45px;
   padding: 0px 15px 0px 15px;
-  color: #fff;
+  color: #3f1224;
   border: 0;
-  font-size: 1.4em;
+  font-size: 2.3rem;
   font-weight: bold;
   cursor: pointer;
   outline: none;
-  z-index: 10000000000000;
+  z-index: 10000;
 }
 
 .cross-hamburger {
@@ -213,27 +216,29 @@ nav[role="navigation"] a:empty {
   top: 0px;
   width: 50px;
   right: 0;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 5px 0px 15px;
   color: #fff;
   border: 0;
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 65px;
   font-weight: bold;
   cursor: pointer;
   outline: none;
-  z-index: 10000000000000;
+  z-index: 1000000;
 }
 
 .hamburger-menu {
-  z-index: 100000000000000000;
+  z-index: 100000;
   font-weight: bold;
   font-size: 0.8em;
   width: 100%;
   margin: 0 auto;
   background: #3f1224;
   padding: 0;
-  display: inline-block;
+  display: block;
+  position: fixed;
   padding: 0;
+  top: 0;
   text-align: center;
   list-style-type: none;
   list-style-image: none;
@@ -791,9 +796,6 @@ input {
 @media all and (min-width: 0px) and (max-width: 600px) {
   .mobile {
     display: block;
-    position: fixed;
-    width: 100%;
-    text-align: right;
   }
 
   #main-menu {
