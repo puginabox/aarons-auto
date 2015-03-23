@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -328,7 +327,6 @@ section article.wrapper {
 }
 
 #the-team {
-  height: 9x00px;
   width: 100%;
   float: left;
   display: block;
@@ -347,6 +345,10 @@ section article.wrapper {
 }
 #the-team .team span {
   visibility: hidden;
+  width: 280px;
+  height: 200px;
+  display: block;
+  text-align: center;
 }
 #the-team .team img {
   max-width: 100%;
@@ -361,6 +363,42 @@ section article.wrapper {
 #the-team .team h3 {
   font-size: 1.6rem;
   padding: 10px 0;
+}
+
+#jackie-simpson {
+  background: url(../images/team/jackie-simpson.jpg) top center/280px 200px no-repeat;
+}
+
+#phil-knight {
+  background: url(../images/team/phil-knight.jpg) top center/280px 200px no-repeat;
+}
+
+#mike-todd {
+  background: url(../images/team/mike-todd.jpg) top center/280px 200px no-repeat;
+}
+
+#aaron-callen {
+  background: url(../images/team/aaron-callen.jpg) top center/280px 200px no-repeat;
+}
+
+#jason-grange {
+  background: url(../images/team/jason-grange.jpg) top center/280px 200px no-repeat;
+}
+
+#gregg-arch {
+  background: url(../images/team/gregg-arch.jpg) top center/280px 200px no-repeat;
+}
+
+#al-williams {
+  background: url(../images/team/al-williams.jpg) top center/280px 200px no-repeat;
+}
+
+#scott-pritchard {
+  background: url(../images/team/scott-pritchard.jpg) top center/280px 200px no-repeat;
+}
+
+#chris-stevens {
+  background: url(../images/team/chris-stevens.jpg) top center/280px 200px no-repeat;
 }
 
 /*----------------- Services -------------*/
@@ -393,18 +431,6 @@ section article.wrapper {
   padding: 0;
   margin: 0;
 }
-#services div .repairs {
-  background: url(../images/services/repairs.png) top left/234px 260px no-repeat;
-}
-#services div .certification {
-  background: url(../images/services/certification.png) top left/234px 260px no-repeat;
-}
-#services div .electrical {
-  background: url(../images/services/electrical.png) top left/234px 260px no-repeat;
-}
-#services div .audio {
-  background: url(../images/services/audio.png) top left/234px 260px no-repeat;
-}
 #services div p {
   font-size: 0.8rem;
   padding: 5px 5% 2px 0;
@@ -425,6 +451,38 @@ section article.wrapper {
   font-size: 0.6rem;
   padding: 3px 0;
   line-height: 160%;
+}
+
+#services .wrapper div span.repairs {
+  width: 240px;
+  height: 300px;
+  display: block;
+  background: url(../images/services/repairs.png) top center no-repeat;
+  background-size: 240px 300px;
+}
+
+#services .wrapper div span.certification {
+  width: 240px;
+  height: 300px;
+  display: block;
+  background: url(../images/services/certification.png) top center no-repeat;
+  background-size: 240px 300px;
+}
+
+#services .wrapper div span.electrical {
+  width: 240px;
+  height: 300px;
+  display: block;
+  background: url(../images/services/electrical.png) top center no-repeat;
+  background-size: 240px 300px;
+}
+
+#services .wrapper div span.audio {
+  width: 240px;
+  height: 300px;
+  display: block;
+  background: url(../images/services/audio.png) top center no-repeat;
+  background-size: 240px 300px;
 }
 
 /*----------------- Testimonials -------------*/
@@ -684,12 +742,12 @@ input {
   /*----------------- About -------------*/
   #about {
     margin: 0;
-    height: 900px;
+    height: 1840px;
   }
   #about img.banner {
     position: absolute;
     left: 0.01%;
-    width: 250px;
+    width: 230px;
   }
   #about div, #about aside {
     height: 300px;
@@ -722,6 +780,7 @@ input {
     margin: 0;
     padding: 0;
     width: 33.33%;
+    height: 450px;
   }
   #the-team .team p {
     font-size: 0.9rem;
@@ -733,9 +792,53 @@ input {
     padding: 10px 0;
   }
 
+  #jackie-simpson {
+    background: url(../images/team/jackie-simpson-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #phil-knight {
+    background: url(../images/team/phil-knight-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #mike-todd {
+    background: url(../images/team/mike-todd-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #aaron-callen {
+    background: url(../images/team/aaron-callen-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #jason-grange {
+    background: url(../images/team/jason-grange-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #gregg-arch {
+    background: url(../images/team/gregg-arch-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #al-williams {
+    background: url(../images/team/al-williams-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #scott-pritchard {
+    background: url(../images/team/scott-pritchard-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #chris-stevens {
+    background: url(../images/team/chris-stevens-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
   /*----------------- Services -------------*/
   #services h2 {
-    color: #c6d2d6;
     font-size: 2rem;
     padding: 0;
     line-height: 1;
@@ -747,8 +850,12 @@ input {
   }
   #services div {
     width: 48%;
-    margin: 20px 0;
+    margin: 0 auto;
     padding: 0;
+    text-align: center;
+  }
+  #services div span {
+    margin: 0 auto;
     text-align: center;
   }
   #services div .services-wrapper {
@@ -763,7 +870,39 @@ input {
   #services div img {
     max-width: 100%;
     width: 200px;
-    height: 200px;
+    height: 250px;
+  }
+
+  #services .wrapper div span.repairs {
+    width: 200px;
+    height: 250px;
+    display: block;
+    background: url(../images/services/repairs-tablet.png) top center no-repeat;
+    background-size: 200px 250px;
+  }
+
+  #services .wrapper div span.certification {
+    width: 200px;
+    height: 250px;
+    display: block;
+    background: url(../images/services/certification-tablet.png) top center no-repeat;
+    background-size: 200px 250px;
+  }
+
+  #services .wrapper div span.electrical {
+    width: 200px;
+    height: 250px;
+    display: block;
+    background: url(../images/services/electrical-tablet.png) top center no-repeat;
+    background-size: 200px 250px;
+  }
+
+  #services .wrapper div span.audio {
+    width: 200px;
+    height: 250px;
+    display: block;
+    background: url(../images/services/audio-tablet.png) top center no-repeat;
+    background-size: 200px 250px;
   }
 
   /*----------------- Testimonials -------------*/
@@ -831,7 +970,7 @@ input {
   #about img.banner {
     float: left;
     padding-left: 5px;
-    margin-top: -60px;
+    margin-top: -90px;
     width: 150px;
   }
   #about div,
@@ -892,6 +1031,11 @@ input {
     height: auto;
     font-size: 1.6rem;
     padding: 0 0 5px 0;
+  }
+
+  #the-team .wrapper span {
+    width: auto;
+    height: auto;
   }
 
   #jackie-simpson {
@@ -1060,6 +1204,7 @@ input {
 
   iframe#twitter-widget-0 {
     width: 100% !important;
+    height: 430px;
   }
 
   aside#estimate {

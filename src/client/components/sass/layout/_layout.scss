@@ -50,7 +50,7 @@ section article.wrapper {
     }
 }
 #the-team {
-    height: 9x00px;
+//    height: 9x00px;
     width: 100%;
     float: left;
     display: block;
@@ -70,6 +70,10 @@ section article.wrapper {
         text-align: center;
         span {
             visibility: hidden;
+            width: 280px;
+            height: 200px;
+            display: block;
+            text-align: center;
         }
         img {
             max-width: 100%;
@@ -87,6 +91,34 @@ section article.wrapper {
         }
     }
 }
+#jackie-simpson {
+    background: url(../images/team/jackie-simpson.jpg) top center / 280px 200px no-repeat;
+}
+#phil-knight {
+    background: url(../images/team/phil-knight.jpg) top center / 280px 200px no-repeat;
+}
+#mike-todd {
+    background: url(../images/team/mike-todd.jpg) top center / 280px 200px no-repeat;
+}
+#aaron-callen {
+    background: url(../images/team/aaron-callen.jpg) top center / 280px 200px no-repeat;
+}
+#jason-grange {
+    background: url(../images/team/jason-grange.jpg) top center / 280px 200px no-repeat;
+}
+#gregg-arch {
+    background: url(../images/team/gregg-arch.jpg) top center / 280px 200px no-repeat;
+}
+#al-williams {
+    background: url(../images/team/al-williams.jpg) top center / 280px 200px no-repeat;
+}
+#scott-pritchard {
+    background: url(../images/team/scott-pritchard.jpg) top center / 280px 200px no-repeat;
+}
+#chris-stevens {
+    background: url(../images/team/chris-stevens.jpg) top center / 280px 200px no-repeat;
+}
+
 
 
 /*----------------- Services -------------*/
@@ -118,19 +150,6 @@ section article.wrapper {
             padding: 0;
             margin: 0;
         }
-        .repairs {
-            background: url(../images/services/repairs.png) top left / 234px 260px no-repeat;
-        }
-        .certification {
-            background: url(../images/services/certification.png) top left / 234px 260px no-repeat;
-        }
-        .electrical {
-            background: url(../images/services/electrical.png) top left / 234px 260px no-repeat;
-        }
-        .audio {
-            background: url(../images/services/audio.png) top left / 234px 260px no-repeat;
-        }
-
         p {
             font-size: 0.8rem;
             padding: 5px 5% 2px 0;
@@ -154,7 +173,34 @@ section article.wrapper {
         }
     }
 }
-
+#services .wrapper div span.repairs {
+    width: 240px;
+    height: 300px;
+    display: block;
+    background: url(../images/services/repairs.png) top center no-repeat;
+    background-size: 240px 300px; 
+}
+#services .wrapper div span.certification {
+    width: 240px;
+    height: 300px;
+    display: block;
+    background: url(../images/services/certification.png) top center no-repeat;
+    background-size: 240px 300px; 
+}
+#services .wrapper div span.electrical {
+    width: 240px;
+    height: 300px;
+    display: block;
+    background: url(../images/services/electrical.png) top center no-repeat;
+    background-size: 240px 300px; 
+}
+#services .wrapper div span.audio {
+    width: 240px;
+    height: 300px;
+    display: block;
+    background: url(../images/services/audio.png) top center no-repeat;
+    background-size: 240px 300px; 
+}
 /*----------------- Testimonials -------------*/
 #testimonials {
 //    top: 1500px;
